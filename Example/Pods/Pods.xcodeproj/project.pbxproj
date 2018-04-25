@@ -38,16 +38,16 @@
 /* Begin PBXFileReference section */
 		116C4578DB20327D733CCB20A2C86AA5 /* Amaca-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-prefix.pch"; sourceTree = "<group>"; };
 		20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		30DFAACB20903D3D0093D73A /* Authenticable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Authenticable.swift; path = ../Amaca/Classes/Authenticable.swift; sourceTree = "<group>"; };
-		30DFAACF209041A30093D73A /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = ../Amaca/Classes/StatusCode.swift; sourceTree = "<group>"; };
-		30DFAAD3209048BA0093D73A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestBuilder.swift; path = ../Amaca/Classes/RequestBuilder.swift; sourceTree = "<group>"; };
-		30DFAAD720904E720093D73A /* AmacaConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AmacaConfigurable.swift; path = ../Amaca/Classes/AmacaConfigurable.swift; sourceTree = "<group>"; };
-		30DFAADD209053680093D73A /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseHandler.swift; path = ../Amaca/Classes/ResponseHandler.swift; sourceTree = "<group>"; };
-		30DFAADF209053970093D73A /* DataResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataResponseHandler.swift; path = ../Amaca/Classes/DataResponseHandler.swift; sourceTree = "<group>"; };
-		30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DecodableResponseHandler.swift; path = ../Amaca/Classes/DecodableResponseHandler.swift; sourceTree = "<group>"; };
-		30DFAAE7209060F40093D73A /* Clientable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Clientable.swift; path = ../Amaca/Classes/Clientable.swift; sourceTree = "<group>"; };
-		30DFAAE9209062740093D73A /* DataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataClient.swift; path = ../Amaca/Classes/DataClient.swift; sourceTree = "<group>"; };
-		30DFAAEB2090651F0093D73A /* CodableClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CodableClient.swift; path = ../Amaca/Classes/CodableClient.swift; sourceTree = "<group>"; };
+		30DFAACB20903D3D0093D73A /* Authenticable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticable.swift; sourceTree = "<group>"; };
+		30DFAACF209041A30093D73A /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		30DFAAD3209048BA0093D73A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		30DFAAD720904E720093D73A /* AmacaConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmacaConfigurable.swift; sourceTree = "<group>"; };
+		30DFAADD209053680093D73A /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		30DFAADF209053970093D73A /* DataResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseHandler.swift; sourceTree = "<group>"; };
+		30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableResponseHandler.swift; sourceTree = "<group>"; };
+		30DFAAE7209060F40093D73A /* Clientable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clientable.swift; sourceTree = "<group>"; };
+		30DFAAE9209062740093D73A /* DataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClient.swift; sourceTree = "<group>"; };
+		30DFAAEB2090651F0093D73A /* CodableClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableClient.swift; sourceTree = "<group>"; };
 		354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Amaca_Tests-dummy.m"; sourceTree = "<group>"; };
 		3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
 		4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +140,8 @@
 				30DFAAE9209062740093D73A /* DataClient.swift */,
 				30DFAAEB2090651F0093D73A /* CodableClient.swift */,
 			);
-			path = Classes;
+			name = Classes;
+			path = Amaca/Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
