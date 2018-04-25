@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C3E9E486879A39F382F70EE09AE3693 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		70F4F0659646A54488986E753C07CB1F /* Pods-Amaca_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */; };
+		B0ADB95561EC80BF0A426F03C4843331 /* Amaca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */; };
+		BA85A33EC9967CE0DEE2840F1286EBE0 /* Pods-Amaca_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F17E4A9D7D18730B3FEBE9F03892C722 /* Pods-Amaca_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8043B3AB6E9A9FEA6D00FB162F86C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED981A8C3789C21F47978D01CE2933E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 509281970E7D63375344ABAA44B5C788;
+			remoteInfo = Amaca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		116C4578DB20327D733CCB20A2C86AA5 /* Amaca-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-prefix.pch"; sourceTree = "<group>"; };
+		20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Amaca_Tests-dummy.m"; sourceTree = "<group>"; };
+		3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
+		4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		631BE4274B0FD62DCF5A27EBAF298507 /* Pods-Amaca_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Amaca_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		662AF08922D146DED9A10AD9A76462E2 /* Amaca.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Amaca.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amaca.xcconfig; sourceTree = "<group>"; };
+		7129CB068BF641599AB58D4A478E5DB1 /* Pods-Amaca_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Amaca_Tests-resources.sh"; sourceTree = "<group>"; };
+		761AFA7EC6CF3369B5EB926918E5D8C7 /* Pods-Amaca_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Amaca_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		788EDD9D89E701690FAC6F4969E7C442 /* Pods_Amaca_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaca_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7898A046EAD68189B0B30B4FA15E4D73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E495177D11077EE3786CEAD987AB146 /* Amaca.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Amaca.modulemap; sourceTree = "<group>"; };
+		B7D331B10FE6658821A12E7C83CD567E /* Pods-Amaca_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Amaca_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BC997D73F7C41313D3F2E28988E369D1 /* Pods-Amaca_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Amaca_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CE0F037B347418367C52606829101DA5 /* Pods-Amaca_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Amaca_Tests.modulemap"; sourceTree = "<group>"; };
+		E6D69756E9C620FB373F299BEF50A7B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC0F744B1B4CC4EDB1A97C80312AE60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17E4A9D7D18730B3FEBE9F03892C722 /* Pods-Amaca_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Amaca_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F2F8DC106CBD6B8AAD34FCFED34530F2 /* Pods-Amaca_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Amaca_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400B2F24047FB2B1AD0BBA2336298135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8043B3AB6E9A9FEA6D00FB162F86C24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC1BBD44571A587CDEA3A6DD717EEDB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3E9E486879A39F382F70EE09AE3693 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010C09B26B3F7D80026CF93648132128 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E495177D11077EE3786CEAD987AB146 /* Amaca.modulemap */,
+				6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */,
+				3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */,
+				116C4578DB20327D733CCB20A2C86AA5 /* Amaca-prefix.pch */,
+				65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */,
+				E6D69756E9C620FB373F299BEF50A7B7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Amaca";
+			sourceTree = "<group>";
+		};
+		1B4B3C4333B345D27DB580ABB81E2FE5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				662AF08922D146DED9A10AD9A76462E2 /* Amaca.podspec */,
+				7898A046EAD68189B0B30B4FA15E4D73 /* LICENSE */,
+				20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1D6A27B470E9FE6EE2D05130D8DCB4D9 /* Amaca */ = {
+			isa = PBXGroup;
+			children = (
+				30DFAAC820903A5A0093D73A /* Classes */,
+				1B4B3C4333B345D27DB580ABB81E2FE5 /* Pod */,
+				010C09B26B3F7D80026CF93648132128 /* Support Files */,
+			);
+			name = Amaca;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		30DFAAC820903A5A0093D73A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FEBC0DF9270522B78370FD499B6E2E44 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B2875082B3CD7C7EA5D7387DBCE13B9E /* Products */,
+				FE38177535B0683C18AB0531DE8C5890 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AEB7746F94E27CC98F230A8909C80678 /* Pods-Amaca_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0F744B1B4CC4EDB1A97C80312AE60 /* Info.plist */,
+				CE0F037B347418367C52606829101DA5 /* Pods-Amaca_Tests.modulemap */,
+				B7D331B10FE6658821A12E7C83CD567E /* Pods-Amaca_Tests-acknowledgements.markdown */,
+				F2F8DC106CBD6B8AAD34FCFED34530F2 /* Pods-Amaca_Tests-acknowledgements.plist */,
+				354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */,
+				BC997D73F7C41313D3F2E28988E369D1 /* Pods-Amaca_Tests-frameworks.sh */,
+				7129CB068BF641599AB58D4A478E5DB1 /* Pods-Amaca_Tests-resources.sh */,
+				F17E4A9D7D18730B3FEBE9F03892C722 /* Pods-Amaca_Tests-umbrella.h */,
+				631BE4274B0FD62DCF5A27EBAF298507 /* Pods-Amaca_Tests.debug.xcconfig */,
+				761AFA7EC6CF3369B5EB926918E5D8C7 /* Pods-Amaca_Tests.release.xcconfig */,
+			);
+			name = "Pods-Amaca_Tests";
+			path = "Target Support Files/Pods-Amaca_Tests";
+			sourceTree = "<group>";
+		};
+		B2875082B3CD7C7EA5D7387DBCE13B9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */,
+				788EDD9D89E701690FAC6F4969E7C442 /* Pods_Amaca_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FE38177535B0683C18AB0531DE8C5890 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEB7746F94E27CC98F230A8909C80678 /* Pods-Amaca_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FEBC0DF9270522B78370FD499B6E2E44 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D6A27B470E9FE6EE2D05130D8DCB4D9 /* Amaca */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5020ACC08169EE27D651238160281867 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0ADB95561EC80BF0A426F03C4843331 /* Amaca-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7402AA1C726DC115194A149873450E3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA85A33EC9967CE0DEE2840F1286EBE0 /* Pods-Amaca_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		509281970E7D63375344ABAA44B5C788 /* Amaca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541E4C69D0B7C1CC135943A261A61B1B /* Build configuration list for PBXNativeTarget "Amaca" */;
+			buildPhases = (
+				988F41865527C12BA86B258C47FEE1E4 /* Sources */,
+				400B2F24047FB2B1AD0BBA2336298135 /* Frameworks */,
+				5020ACC08169EE27D651238160281867 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amaca;
+			productName = Amaca;
+			productReference = 4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D686F37469B02D44331DEE9DADD3B4A /* Pods-Amaca_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49A2BA8A073F81DB4868C30DE7D85DB /* Build configuration list for PBXNativeTarget "Pods-Amaca_Tests" */;
+			buildPhases = (
+				B96AAE32B94AE604332114203B5977A7 /* Sources */,
+				EC1BBD44571A587CDEA3A6DD717EEDB1 /* Frameworks */,
+				7402AA1C726DC115194A149873450E3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C63412E20CA491BCD242BA00A5CFEB0E /* PBXTargetDependency */,
+			);
+			name = "Pods-Amaca_Tests";
+			productName = "Pods-Amaca_Tests";
+			productReference = 788EDD9D89E701690FAC6F4969E7C442 /* Pods_Amaca_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B2875082B3CD7C7EA5D7387DBCE13B9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				509281970E7D63375344ABAA44B5C788 /* Amaca */,
+				5D686F37469B02D44331DEE9DADD3B4A /* Pods-Amaca_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		988F41865527C12BA86B258C47FEE1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96AAE32B94AE604332114203B5977A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F4F0659646A54488986E753C07CB1F /* Pods-Amaca_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C63412E20CA491BCD242BA00A5CFEB0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Amaca;
+			target = 509281970E7D63375344ABAA44B5C788 /* Amaca */;
+			targetProxy = ED981A8C3789C21F47978D01CE2933E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		232FB2C7F4DF9010A8CAFB9B0047848E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Amaca/Amaca-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Amaca/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Amaca/Amaca.modulemap";
+				PRODUCT_MODULE_NAME = Amaca;
+				PRODUCT_NAME = Amaca;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9FAA690B38EAE8C5CD556EC3A190AE95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761AFA7EC6CF3369B5EB926918E5D8C7 /* Pods-Amaca_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Amaca_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Amaca_Tests/Pods-Amaca_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CD5C1BF2572475253AD688B81A745C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Amaca/Amaca-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Amaca/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Amaca/Amaca.modulemap";
+				PRODUCT_MODULE_NAME = Amaca;
+				PRODUCT_NAME = Amaca;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D557E5C70112EB3C008DDBB311897992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631BE4274B0FD62DCF5A27EBAF298507 /* Pods-Amaca_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Amaca_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Amaca_Tests/Pods-Amaca_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541E4C69D0B7C1CC135943A261A61B1B /* Build configuration list for PBXNativeTarget "Amaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5C1BF2572475253AD688B81A745C91 /* Debug */,
+				232FB2C7F4DF9010A8CAFB9B0047848E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49A2BA8A073F81DB4868C30DE7D85DB /* Build configuration list for PBXNativeTarget "Pods-Amaca_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D557E5C70112EB3C008DDBB311897992 /* Debug */,
+				9FAA690B38EAE8C5CD556EC3A190AE95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

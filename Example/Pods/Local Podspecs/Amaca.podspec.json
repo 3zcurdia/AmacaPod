@@ -1,0 +1,22 @@
+{
+  "name": "Amaca",
+  "version": "0.1.0",
+  "summary": "A short description of Amaca.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Luis Ezcurdia/Amaca",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Luis Ezcurdia": "ing.ezcurdia@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Luis Ezcurdia/Amaca.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Amaca/Classes/**/*"
+}

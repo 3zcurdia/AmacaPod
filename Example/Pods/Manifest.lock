@@ -1,0 +1,16 @@
+PODS:
+  - Amaca (0.1.0)
+
+DEPENDENCIES:
+  - Amaca (from `../`)
+
+EXTERNAL SOURCES:
+  Amaca:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Amaca: 1a9f95596b963490c6e3a2e0c1907c15c5bc4211
+
+PODFILE CHECKSUM: 6cb612fc7d6d20222ed1240a1762915fbfa943bd
+
+COCOAPODS: 1.5.0

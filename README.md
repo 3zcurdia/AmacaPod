@@ -1,9 +1,9 @@
 # Amaca
 
-[![CI Status](https://img.shields.io/travis/Luis Ezcurdia/Amaca.svg?style=flat)](https://travis-ci.org/Luis Ezcurdia/Amaca)
-[![Version](https://img.shields.io/cocoapods/v/Amaca.svg?style=flat)](https://cocoapods.org/pods/Amaca)
-[![License](https://img.shields.io/cocoapods/l/Amaca.svg?style=flat)](https://cocoapods.org/pods/Amaca)
-[![Platform](https://img.shields.io/cocoapods/p/Amaca.svg?style=flat)](https://cocoapods.org/pods/Amaca)
+[![CI Status](http://img.shields.io/travis/3zcurdia/Amaca.svg?style=flat)](https://travis-ci.org/3zcurdia/amaca)
+[![Version](https://img.shields.io/cocoapods/v/Amaca.svg?style=flat)](http://cocoapods.org/pods/amaca)
+[![License](https://img.shields.io/cocoapods/l/Amaca.svg?style=flat)](http://cocoapods.org/pods/amaca)
+[![Platform](https://img.shields.io/cocoapods/p/Amaca.svg?style=flat)](http://cocoapods.org/pods/amaca)
 
 ## Example
 
@@ -13,16 +13,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-Amaca is available through [CocoaPods](https://cocoapods.org). To install
+Amaca is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Amaca'
 ```
-
-## Author
-
-Luis Ezcurdia, ing.ezcurdia@gmail.com
 
 ## License
 
