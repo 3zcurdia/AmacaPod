@@ -10,6 +10,7 @@
 		2C3E9E486879A39F382F70EE09AE3693 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACB20903D3D0093D73A /* Authenticable.swift */; };
 		30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACF209041A30093D73A /* StatusCode.swift */; };
+		30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD3209048BA0093D73A /* RequestBuilder.swift */; };
 		70F4F0659646A54488986E753C07CB1F /* Pods-Amaca_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */; };
 		B0ADB95561EC80BF0A426F03C4843331 /* Amaca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */; };
@@ -32,6 +33,7 @@
 		20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		30DFAACB20903D3D0093D73A /* Authenticable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Authenticable.swift; path = ../Amaca/Classes/Authenticable.swift; sourceTree = "<group>"; };
 		30DFAACF209041A30093D73A /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = ../Amaca/Classes/StatusCode.swift; sourceTree = "<group>"; };
+		30DFAAD3209048BA0093D73A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestBuilder.swift; path = ../Amaca/Classes/RequestBuilder.swift; sourceTree = "<group>"; };
 		354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Amaca_Tests-dummy.m"; sourceTree = "<group>"; };
 		3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
 		4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			children = (
 				30DFAACB20903D3D0093D73A /* Authenticable.swift */,
 				30DFAACF209041A30093D73A /* StatusCode.swift */,
+				30DFAAD3209048BA0093D73A /* RequestBuilder.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */,
 				30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */,
 				30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */,
+				30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

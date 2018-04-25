@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		30DFAACE20903F1E0093D73A /* HeaderAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACD20903F1E0093D73A /* HeaderAuthenticationTests.swift */; };
 		30DFAAD2209045C70093D73A /* StatusCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD1209045C70093D73A /* StatusCodeTests.swift */; };
+		30DFAAD6209049460093D73A /* RequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD5209049460093D73A /* RequestBuilderTests.swift */; };
 		4287D46F2B90E0C582407D49 /* Pods_Amaca_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABDB00673D1A2526A1B4D3E /* Pods_Amaca_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* QueryAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* QueryAuthenticationTests.swift */; };
 /* End PBXBuildFile section */
@@ -17,6 +18,7 @@
 		12FBEBE0B853DE5DF80B8285 /* Pods-Amaca_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaca_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaca_Tests/Pods-Amaca_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		30DFAACD20903F1E0093D73A /* HeaderAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAuthenticationTests.swift; sourceTree = "<group>"; };
 		30DFAAD1209045C70093D73A /* StatusCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCodeTests.swift; sourceTree = "<group>"; };
+		30DFAAD5209049460093D73A /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Amaca_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Amaca_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* QueryAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryAuthenticationTests.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				607FACEB1AFB9204008FA782 /* QueryAuthenticationTests.swift */,
 				30DFAACD20903F1E0093D73A /* HeaderAuthenticationTests.swift */,
 				30DFAAD1209045C70093D73A /* StatusCodeTests.swift */,
+				30DFAAD5209049460093D73A /* RequestBuilderTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -218,6 +221,7 @@
 				30DFAACE20903F1E0093D73A /* HeaderAuthenticationTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* QueryAuthenticationTests.swift in Sources */,
 				30DFAAD2209045C70093D73A /* StatusCodeTests.swift in Sources */,
+				30DFAAD6209049460093D73A /* RequestBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
