@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C3E9E486879A39F382F70EE09AE3693 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		306AE91F2090DF0500EE9BBA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AE91E2090DF0500EE9BBA /* DataService.swift */; };
+		306AE9212090E17C00EE9BBA /* CodableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AE9202090E17C00EE9BBA /* CodableService.swift */; };
 		30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACB20903D3D0093D73A /* Authenticable.swift */; };
 		30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACF209041A30093D73A /* StatusCode.swift */; };
 		30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD3209048BA0093D73A /* RequestBuilder.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		116C4578DB20327D733CCB20A2C86AA5 /* Amaca-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-prefix.pch"; sourceTree = "<group>"; };
 		20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		306AE91E2090DF0500EE9BBA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		306AE9202090E17C00EE9BBA /* CodableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableService.swift; sourceTree = "<group>"; };
 		30DFAACB20903D3D0093D73A /* Authenticable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticable.swift; sourceTree = "<group>"; };
 		30DFAACF209041A30093D73A /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		30DFAAD3209048BA0093D73A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
@@ -138,7 +142,9 @@
 				30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */,
 				30DFAAE7209060F40093D73A /* Clientable.swift */,
 				30DFAAE9209062740093D73A /* DataClient.swift */,
+				306AE91E2090DF0500EE9BBA /* DataService.swift */,
 				30DFAAEB2090651F0093D73A /* CodableClient.swift */,
+				306AE9202090E17C00EE9BBA /* CodableService.swift */,
 			);
 			name = Classes;
 			path = Amaca/Classes;
@@ -311,9 +317,11 @@
 				B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */,
 				30DFAAE620905B6E0093D73A /* DecodableResponseHandler.swift in Sources */,
 				30DFAAEC2090651F0093D73A /* CodableClient.swift in Sources */,
+				306AE9212090E17C00EE9BBA /* CodableService.swift in Sources */,
 				30DFAAE8209060F40093D73A /* Clientable.swift in Sources */,
 				30DFAAE0209053970093D73A /* DataResponseHandler.swift in Sources */,
 				30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */,
+				306AE91F2090DF0500EE9BBA /* DataService.swift in Sources */,
 				30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */,
 				30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */,
 				30DFAAD820904E720093D73A /* AmacaConfigurable.swift in Sources */,

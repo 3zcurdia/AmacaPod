@@ -11,9 +11,9 @@ import Amaca
 
 class DecodableResponseHandlerTests: XCTestCase {
     let url = URL(string: "https://example.com/api")!
-    let post = MockCodablePost(id: 21, title: "foo", content: "bar baz")
+    let post = MockCodablePost(title: "foo", content: "bar baz")
     lazy var encodedData: Data = {
-        return try! JSONEncoder().encode(post)
+        return (try? JSONEncoder().encode(post)) ?? Data()
     }()
 
     override func setUp() {
@@ -93,7 +93,6 @@ class DecodableResponseHandlerTests: XCTestCase {
         XCTAssertEqual(handler.status, StatusCode.success)
         XCTAssertNotNil(handler.data)
         let result = handler.data!
-        XCTAssertEqual(result.id, post.id)
         XCTAssertEqual(result.title, post.title)
         XCTAssertEqual(result.content, post.content)
     }

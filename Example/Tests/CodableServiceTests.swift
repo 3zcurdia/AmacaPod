@@ -9,15 +9,15 @@
 import XCTest
 import Amaca
 
-class CodableClientTests: XCTestCase {
+class CodableServiceTests: XCTestCase {
     let url = URL(string: "https://jsonplaceholder.typicode.com")!
-    var client: DataClient!
+    var service: CodableService<MockCodablePost>!
 
     override func setUp() {
         super.setUp()
         let session = URLSession.shared
         let config = MockConfig(session: session, baseUrl: url)
-        self.client = CodableClient<MockCodablePost>(config: config, path: "/posts", auth: nil)
+        self.service = CodableService<MockCodablePost>(config: config, path: "/posts", auth: nil)
     }
 
     override func tearDown() {
@@ -25,11 +25,13 @@ class CodableClientTests: XCTestCase {
     }
 
 //    func testIndexSuccess() {
-//        let exp = expectation(description: "Successfull index")
-//        self.client.index { resp in
+//        let exp = expectation(description: "Successfull codable index")
+//        self.service.index { response in
 //            exp.fulfill()
-//            let response = resp as! DecodableResponseHandler<MockCodablePost>
-//            XCTAssertNotNil(response)
+//            XCTAssertEqual(response.status, StatusCode.success)
+//        }
+//        self.service.index { response in
+//            exp.fulfill()
 //            XCTAssertNil(response.error)
 //            XCTAssertNotNil(response.data)
 //            XCTAssertNotNil(response.response)

@@ -17,7 +17,6 @@ struct MockConfig: AmacaConfigurable {
 }
 
 struct MockCodablePost: Codable {
-    let id: Int
     let title: String
     let content: String
 }

@@ -8,35 +8,21 @@
 import Foundation
 
 public class CodableClient<T>: DataClient where T: Codable {
-    typealias codableHandlerClojure = (DecodableResponseHandler<T>) -> Void
-
-    func create(data: T, completionHandler: @escaping codableHandlerClojure) {
-        var request = requestBuilder.post(path: self.path)
-        request.httpBody = try? JSONEncoder().encode(data)
-        let task = buildTaksFor(request: request, completionHandler: completionHandler)
-        task.resume()
+    typealias DecodableResponseHandlerListClojure = (DecodableResponseHandler<[T]>) -> Void
+    func listTaskFor(request: URLRequest,
+                     codableCompletionHandler: @escaping DecodableResponseHandlerListClojure) -> URLSessionDataTask {
+        return self.taskFor(request: request, completionHandler: { resp in
+            guard let response = resp as? DecodableResponseHandler<[T]> else { return }
+            codableCompletionHandler(response)
+        })
     }
 
-    func update(id: Int, data: T, completionHandler: @escaping codableHandlerClojure) {
-        self.update(slug: String(describing: id), data: data, completionHandler: completionHandler)
-    }
-
-    func update(slug: String, data: T, completionHandler: @escaping codableHandlerClojure) {
-        var request = requestBuilder.patch(path: "\(self.path)/\(slug)")
-        request.httpBody = try? JSONEncoder().encode(data)
-        let task = buildTaksFor(request: request, completionHandler: completionHandler)
-        task.resume()
-    }
-
-    func buildTaksFor(request: URLRequest, completionHandler: @escaping codableHandlerClojure) -> URLSessionDataTask {
-        return config.session.dataTask(with: request) { [weak self] (data, response, error) in
-            guard let unwrappedSelf = self else { return }
-            guard let response = unwrappedSelf.buildResponse(data: data, response: response, error: error) as? DecodableResponseHandler<T> else { return }
-            DispatchQueue.main.async { completionHandler(response) }
-        }
-    }
-
-    override public func buildResponse(data: Data?, response: URLResponse?, error: Error?) -> ResponseHandler {
-        return DecodableResponseHandler<T>(data: data, response: response, error: error)
+    typealias DecodableResponseHandlerClojure = (DecodableResponseHandler<T>) -> Void
+    func taskFor(request: URLRequest,
+                 codableCompletionHandler: @escaping DecodableResponseHandlerClojure) -> URLSessionDataTask {
+        return self.taskFor(request: request, completionHandler: { resp in
+            guard let response = resp as? DecodableResponseHandler<T> else { return }
+            codableCompletionHandler(response)
+        })
     }
 }
