@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.swift_version = '4.0'
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Amaca/Clases/**/*'
+  s.source_files = 'Amaca/Classes/**/*'
 
   # s.resource_bundles = {
   #   'Amaca' => ['Amaca/Assets/*.png']
