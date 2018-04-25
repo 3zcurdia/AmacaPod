@@ -10,11 +10,12 @@ import Foundation
 public class RequestBuilder {
     let componets: URLComponents
     let auth: Authenticable?
-    public var contentType: String = "application/json"
+    public var contentType: String
 
-    public init(components: URLComponents, auth: Authenticable?) {
+    public init(components: URLComponents, auth: Authenticable?, contentType: String = "application/json") {
         self.componets = components
         self.auth = auth
+        self.contentType = contentType
     }
 
     public func get(path: String, params: [String: String]? = nil) -> URLRequest {
