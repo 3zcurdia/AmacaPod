@@ -12,6 +12,9 @@
 		30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACF209041A30093D73A /* StatusCode.swift */; };
 		30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD3209048BA0093D73A /* RequestBuilder.swift */; };
 		30DFAAD820904E720093D73A /* AmacaConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD720904E720093D73A /* AmacaConfigurable.swift */; };
+		30DFAADE209053680093D73A /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAADD209053680093D73A /* ResponseHandler.swift */; };
+		30DFAAE0209053970093D73A /* DataResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAADF209053970093D73A /* DataResponseHandler.swift */; };
+		30DFAAE620905B6E0093D73A /* DecodableResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */; };
 		70F4F0659646A54488986E753C07CB1F /* Pods-Amaca_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */; };
 		B0ADB95561EC80BF0A426F03C4843331 /* Amaca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */; };
@@ -36,6 +39,9 @@
 		30DFAACF209041A30093D73A /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = ../Amaca/Classes/StatusCode.swift; sourceTree = "<group>"; };
 		30DFAAD3209048BA0093D73A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestBuilder.swift; path = ../Amaca/Classes/RequestBuilder.swift; sourceTree = "<group>"; };
 		30DFAAD720904E720093D73A /* AmacaConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AmacaConfigurable.swift; path = ../Amaca/Classes/AmacaConfigurable.swift; sourceTree = "<group>"; };
+		30DFAADD209053680093D73A /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseHandler.swift; path = ../Amaca/Classes/ResponseHandler.swift; sourceTree = "<group>"; };
+		30DFAADF209053970093D73A /* DataResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataResponseHandler.swift; path = ../Amaca/Classes/DataResponseHandler.swift; sourceTree = "<group>"; };
+		30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DecodableResponseHandler.swift; path = ../Amaca/Classes/DecodableResponseHandler.swift; sourceTree = "<group>"; };
 		354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Amaca_Tests-dummy.m"; sourceTree = "<group>"; };
 		3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
 		4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +127,9 @@
 				30DFAACF209041A30093D73A /* StatusCode.swift */,
 				30DFAAD3209048BA0093D73A /* RequestBuilder.swift */,
 				30DFAAD720904E720093D73A /* AmacaConfigurable.swift */,
+				30DFAADD209053680093D73A /* ResponseHandler.swift */,
+				30DFAADF209053970093D73A /* DataResponseHandler.swift */,
+				30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -290,10 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */,
+				30DFAAE620905B6E0093D73A /* DecodableResponseHandler.swift in Sources */,
+				30DFAAE0209053970093D73A /* DataResponseHandler.swift in Sources */,
 				30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */,
 				30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */,
 				30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */,
 				30DFAAD820904E720093D73A /* AmacaConfigurable.swift in Sources */,
+				30DFAADE209053680093D73A /* ResponseHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

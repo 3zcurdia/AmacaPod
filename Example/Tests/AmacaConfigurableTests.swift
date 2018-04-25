@@ -9,11 +9,6 @@
 import XCTest
 import Amaca
 
-struct MockConfig: AmacaConfigurable {
-    var session: URLSession
-    var baseUrl: URL
-}
-
 class AmacaConfigurableTests: XCTestCase {
 
     override func setUp() {

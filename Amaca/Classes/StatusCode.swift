@@ -30,7 +30,7 @@ public enum StatusCode: Int {
             self = .clientError
         case 500, 501, 502, 503, 504, 505, 506, 507, 510, 511:
             self = .serverError
-        case 512...10000:
+        case 512..<10001:
             self = .error
         case 10001:
             self = .parserError
