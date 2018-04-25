@@ -34,4 +34,26 @@ class RequestBuilderTests: XCTestCase {
         let req = builder.get(path: "/foo")
         XCTAssertEqual(req.url!.absoluteString, "https://example.com/api/foo")
     }
+
+    func testBuildWithParams() {
+        let builder = RequestBuilder(components: components, auth: nil)
+        let req = builder.get(path: "/foo", params: ["bar": "baz"])
+        XCTAssertEqual(req.url!.absoluteString, "https://example.com/api/foo?bar=baz")
+    }
+
+    func testBuildWithQueryAuth() {
+        let auth = QueryAuthentication(token: "secret123")
+        let builder = RequestBuilder(components: components, auth: auth)
+        let req = builder.get(path: "/foo")
+        XCTAssertEqual(req.url!.absoluteString, "https://example.com/api/foo?token=secret123")
+    }
+
+    func testBuildWithHeaderAuth() {
+        let auth = HeaderAuthentication(token: "secret123")
+        let builder = RequestBuilder(components: components, auth: auth)
+        let req = builder.get(path: "/foo")
+        XCTAssertEqual(req.url!.absoluteString, "https://example.com/api/foo")
+        let result = req.value(forHTTPHeaderField: "Authorization")!
+        XCTAssertEqual(result, "Bearer secret123")
+    }
 }

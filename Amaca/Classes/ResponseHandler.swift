@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ResponseHandler {
+public protocol ResponseHandler {
     var status: StatusCode { get }
     var response: HTTPURLResponse? { get }
     var error: Error? { get }

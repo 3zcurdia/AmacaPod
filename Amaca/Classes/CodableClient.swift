@@ -7,26 +7,36 @@
 
 import Foundation
 
-class CodableClient<T>: DataClient where T: Codable {
-    func create(data: T, completionHandler: @escaping responseHandlerClojure) {
+public class CodableClient<T>: DataClient where T: Codable {
+    typealias codableHandlerClojure = (DecodableResponseHandler<T>) -> Void
+
+    func create(data: T, completionHandler: @escaping codableHandlerClojure) {
         var request = requestBuilder.post(path: self.path)
         request.httpBody = try? JSONEncoder().encode(data)
         let task = buildTaksFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
 
-    func update(id: Int, data: T, completionHandler: @escaping responseHandlerClojure) {
-        self.delete(slug: String(describing: id), completionHandler: completionHandler)
+    func update(id: Int, data: T, completionHandler: @escaping codableHandlerClojure) {
+        self.update(slug: String(describing: id), data: data, completionHandler: completionHandler)
     }
 
-    func update(slug: String, data: T, completionHandler: @escaping responseHandlerClojure) {
+    func update(slug: String, data: T, completionHandler: @escaping codableHandlerClojure) {
         var request = requestBuilder.patch(path: "\(self.path)/\(slug)")
         request.httpBody = try? JSONEncoder().encode(data)
         let task = buildTaksFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
 
-    override func buildResponse(data: Data?, response: URLResponse?, error: Error?) -> ResponseHandler {
+    func buildTaksFor(request: URLRequest, completionHandler: @escaping codableHandlerClojure) -> URLSessionDataTask {
+        return config.session.dataTask(with: request) { [weak self] (data, response, error) in
+            guard let unwrappedSelf = self else { return }
+            guard let response = unwrappedSelf.buildResponse(data: data, response: response, error: error) as? DecodableResponseHandler<T> else { return }
+            DispatchQueue.main.async { completionHandler(response) }
+        }
+    }
+
+    override public func buildResponse(data: Data?, response: URLResponse?, error: Error?) -> ResponseHandler {
         return DecodableResponseHandler<T>(data: data, response: response, error: error)
     }
 }

@@ -7,9 +7,9 @@
 
 import Foundation
 
-typealias responseHandlerClojure = (ResponseHandler) -> Void
+public typealias responseHandlerClojure = (ResponseHandler) -> Void
 
-protocol Clientable {
+public protocol Clientable {
     var config: AmacaConfigurable { get }
     var path: String { get }
     var requestBuilder: RequestBuilder { get }

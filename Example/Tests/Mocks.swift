@@ -16,7 +16,7 @@ struct MockConfig: AmacaConfigurable {
     var baseUrl: URL
 }
 
-struct MockDecodablePost: Codable {
+struct MockCodablePost: Codable {
     let id: Int
     let title: String
     let content: String
