@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30DFAACE20903F1E0093D73A /* HeaderAuthenticationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACD20903F1E0093D73A /* HeaderAuthenticationTest.swift */; };
 		4287D46F2B90E0C582407D49 /* Pods_Amaca_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABDB00673D1A2526A1B4D3E /* Pods_Amaca_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* QueryAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* QueryAuthenticationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12FBEBE0B853DE5DF80B8285 /* Pods-Amaca_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaca_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaca_Tests/Pods-Amaca_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		30DFAACD20903F1E0093D73A /* HeaderAuthenticationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAuthenticationTest.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Amaca_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Amaca_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* QueryAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryAuthenticationTests.swift; sourceTree = "<group>"; };
 		7ABDB00673D1A2526A1B4D3E /* Pods_Amaca_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaca_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8169FDA46D6D8B400AC37E4B /* Amaca.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Amaca.podspec; path = ../Amaca.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA21142C3C07126927042C08 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -66,7 +68,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* QueryAuthenticationTests.swift */,
+				30DFAACD20903F1E0093D73A /* HeaderAuthenticationTest.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -209,7 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				30DFAACE20903F1E0093D73A /* HeaderAuthenticationTest.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* QueryAuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

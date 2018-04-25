@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C3E9E486879A39F382F70EE09AE3693 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACB20903D3D0093D73A /* Authenticable.swift */; };
 		70F4F0659646A54488986E753C07CB1F /* Pods-Amaca_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */; };
 		B0ADB95561EC80BF0A426F03C4843331 /* Amaca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		116C4578DB20327D733CCB20A2C86AA5 /* Amaca-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-prefix.pch"; sourceTree = "<group>"; };
 		20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		30DFAACB20903D3D0093D73A /* Authenticable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Authenticable.swift; path = ../Amaca/Classes/Authenticable.swift; sourceTree = "<group>"; };
 		354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Amaca_Tests-dummy.m"; sourceTree = "<group>"; };
 		3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
 		4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 		30DFAAC820903A5A0093D73A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				30DFAACB20903D3D0093D73A /* Authenticable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -248,6 +251,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					509281970E7D63375344ABAA44B5C788 = {
+						LastSwiftMigration = 0930;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -273,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */,
+				30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -489,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
