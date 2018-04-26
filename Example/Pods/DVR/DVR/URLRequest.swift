@@ -24,7 +24,6 @@ extension URLRequest {
     }
 }
 
-
 extension URLRequest {
     func appending(headers: [AnyHashable: Any]) -> URLRequest {
         guard let headers = headers as? [String: String] else { return self }
@@ -44,7 +43,6 @@ extension URLRequest {
         return request
     }
 }
-
 
 extension NSMutableURLRequest {
     convenience init(dictionary: [String: Any]) {
@@ -68,13 +66,12 @@ extension NSMutableURLRequest {
     }
 }
 
-
 extension NSMutableURLRequest {
     func appendHeaders(_ headers: [AnyHashable: Any]) {
         var existingHeaders = allHTTPHeaderFields ?? [:]
 
         headers.forEach { header in
-            guard let key = header.0 as? String, let value = header.1 as? String , existingHeaders[key] == nil else {
+            guard let key = header.0 as? String, let value = header.1 as? String, existingHeaders[key] == nil else {
                 return
             }
 

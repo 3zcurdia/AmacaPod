@@ -23,14 +23,13 @@ open class Session: URLSession {
 
     // MARK: - Initializers
 
-    public init(outputDirectory: String = "~/Desktop/DVR/", cassetteName: String, testBundle: Bundle = Bundle.allBundles.filter() { $0.bundlePath.hasSuffix(".xctest") }.first!, backingSession: URLSession = URLSession.shared) {
+    public init(outputDirectory: String = "~/Desktop/DVR/", cassetteName: String, testBundle: Bundle = Bundle.allBundles.filter { $0.bundlePath.hasSuffix(".xctest") }.first!, backingSession: URLSession = URLSession.shared) {
         self.outputDirectory = outputDirectory
         self.cassetteName = cassetteName
         self.testBundle = testBundle
         self.backingSession = backingSession
         super.init()
     }
-
 
     // MARK: - URLSession
 
@@ -74,7 +73,6 @@ open class Session: URLSession {
         backingSession.invalidateAndCancel()
     }
 
-
     // MARK: - Recording
 
     /// You don’t need to call this method if you're only recoding one request.
@@ -105,7 +103,6 @@ open class Session: URLSession {
             finishRecording()
         }
     }
-
 
     // MARK: - Internal
 
@@ -140,7 +137,6 @@ open class Session: URLSession {
             delegate.urlSession?(self, task: task, didCompleteWithError: nil)
         }
     }
-
 
     // MARK: - Private
 
@@ -198,7 +194,6 @@ open class Session: URLSession {
         let cassette = Cassette(name: cassetteName, interactions: interactions)
 
         // Persist
-
 
         do {
             let outputPath = ((outputDirectory as NSString).appendingPathComponent(cassetteName) as NSString).appendingPathExtension("json")!

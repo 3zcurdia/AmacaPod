@@ -20,7 +20,7 @@ class DataServiceTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-    
+
     func buildService(for session: URLSession) -> DataService {
         let config = MockConfig(session: session, baseUrl: url)
         return DataService(config: config, path: "/posts", auth: nil)
@@ -62,7 +62,8 @@ class DataServiceTests: XCTestCase {
         let session = Session(cassetteName: "create.success")
         let service = buildService(for: session)
         let exp = expectation(description: "Successfull create")
-        service.create(data: "{}".data(using: .utf8)!) { response in
+        let data = try? JSONEncoder().encode(MockCodablePost(title: "title", body: "body"))
+        service.create(data: data!) { response in
             exp.fulfill()
             XCTAssertNotNil(response)
             XCTAssertNil(response.error)
@@ -78,7 +79,8 @@ class DataServiceTests: XCTestCase {
         let session = Session(cassetteName: "update.success")
         let service = buildService(for: session)
         let exp = expectation(description: "Successfull update")
-        service.update(101, data: "{}".data(using: .utf8)!) { response in
+        let data = try? JSONEncoder().encode(MockCodablePost(title: "title", body: "body"))
+        service.update(101, data: data!) { response in
             exp.fulfill()
             XCTAssertNotNil(response)
             XCTAssertNil(response.error)
@@ -96,7 +98,6 @@ class DataServiceTests: XCTestCase {
         let exp = expectation(description: "Successfull delete")
         service.delete(102) { response in
             exp.fulfill()
-            XCTAssertNotNil(response)
             XCTAssertNil(response.error)
             XCTAssertNotNil(response.data)
             XCTAssertNotNil(response.response)

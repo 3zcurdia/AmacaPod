@@ -41,7 +41,7 @@ public class DataService: DataClient {
 
     public func update(slug: String, data: Data,
                        completionHandler: @escaping DataResponseHandlerClojure) {
-        var request = requestBuilder.patch(path: "\(self.path)/\(slug)")
+        var request = requestBuilder.put(path: "\(self.path)/\(slug)")
         request.httpBody = data
         let task = taskFor(request: request,
                            dataCompletionHandler: completionHandler)

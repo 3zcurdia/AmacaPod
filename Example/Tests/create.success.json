@@ -26,7 +26,7 @@
           "Content-Type" : "application\/json"
         },
         "method" : "POST",
-        "body" : {},
+        "body" : { "title": "title", "body": "body" },
         "url" : "https:\/\/jsonplaceholder.typicode.com\/posts"
       }
     }

@@ -18,5 +18,5 @@ struct MockConfig: AmacaConfigurable {
 
 struct MockCodablePost: Codable {
     let title: String
-    let content: String
+    let body: String
 }

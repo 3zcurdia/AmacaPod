@@ -22,16 +22,21 @@ public struct DecodableResponseHandler<T>:ResponseHandler where T: Decodable {
             return
         }
         var json: T? = nil
+        var status = StatusCode(rawValue: self.response?.statusCode ?? 0)
         do {
             if let unwrappedData = data {
                 json = try JSONDecoder().decode(T.self, from: unwrappedData)
             }
-            self.status = StatusCode(rawValue: self.response?.statusCode ?? 0)
             self.error = nil
         } catch let err {
-            self.error = err
-            self.status = .parserError
+            if self.response?.statusCode == 204 {
+                self.error = nil
+            } else {
+                self.error = err
+                status = .parserError
+            }
         }
         self.data = json
+        self.status = status
     }
 }

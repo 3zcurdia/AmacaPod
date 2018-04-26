@@ -10,7 +10,6 @@ final class SessionDownloadTask: URLSessionDownloadTask {
     let request: URLRequest
     let completion: Completion?
 
-
     // MARK: - Initializers
 
     init(session: Session, request: URLRequest, completion: Completion? = nil) {

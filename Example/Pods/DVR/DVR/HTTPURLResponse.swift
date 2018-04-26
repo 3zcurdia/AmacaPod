@@ -39,7 +39,6 @@ class HTTPURLResponse: Foundation.HTTPURLResponse {
     }
 }
 
-
 extension HTTPURLResponse {
     convenience init(dictionary: [String: Any]) {
         let url = URL(string: dictionary["url"] as! String)!

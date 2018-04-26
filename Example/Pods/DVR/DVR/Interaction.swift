@@ -9,7 +9,6 @@ struct Interaction {
     let responseData: Data?
     let recordedAt: Date
 
-
     // MARK: - Initializers
 
     init(request: URLRequest, response: Foundation.URLResponse, responseData: Data? = nil, recordedAt: Date = Date()) {
@@ -18,7 +17,6 @@ struct Interaction {
         self.responseData = responseData
         self.recordedAt = recordedAt
     }
-
 
     // MARK: - Encoding
 
@@ -49,7 +47,7 @@ struct Interaction {
 
         if let contentType = headers?["Content-Type"] {
             // Text
-            if let string = body as? String , contentType.hasPrefix("text/") {
+            if let string = body as? String, contentType.hasPrefix("text/") {
                 // TODO: Use encoding if specified in headers
                 return string.data(using: String.Encoding.utf8)
             }
@@ -72,7 +70,6 @@ struct Interaction {
         return nil
     }
 }
-
 
 extension Interaction {
     var dictionary: [String: Any] {

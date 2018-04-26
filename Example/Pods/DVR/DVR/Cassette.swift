@@ -7,14 +7,12 @@ struct Cassette {
     let name: String
     let interactions: [Interaction]
 
-
     // MARK: - Initializers
 
     init(name: String, interactions: [Interaction]) {
         self.name = name
         self.interactions = interactions
     }
-
 
     // MARK: - Functions
 
@@ -23,14 +21,13 @@ struct Cassette {
             let interactionRequest = interaction.request
 
             // Note: We don't check headers right now
-            if interactionRequest.httpMethod == request.httpMethod && interactionRequest.url == request.url && interactionRequest.hasHTTPBodyEqualToThatOfRequest(request)  {
+            if interactionRequest.httpMethod == request.httpMethod && interactionRequest.url == request.url && interactionRequest.hasHTTPBodyEqualToThatOfRequest(request) {
                 return interaction
             }
         }
         return nil
     }
 }
-
 
 extension Cassette {
     var dictionary: [String: Any] {

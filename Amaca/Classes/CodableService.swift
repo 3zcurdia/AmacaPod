@@ -14,41 +14,49 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
         task.resume()
     }
 
-    //    typealias codableHandlerClojure = (DecodableResponseHandler<T>) -> Void
-    //
-    //    func create(data: T,
-    //                completionHandler: @escaping codableHandlerClojure) {
-    //        var request = requestBuilder.post(path: self.path)
-    //        request.httpBody = try? JSONEncoder().encode(data)
-    //        let task = buildTaskFor(request: request, completionHandler: completionHandler)
-    //        task.resume()
-    //    }
-    //
-    //    func update(id: Int, data: T,
-    //                completionHandler: @escaping codableHandlerClojure) {
-    //        self.update(slug: String(describing: id), data: data, completionHandler: completionHandler)
-    //    }
-    //
-    //    func update(slug: String, data: T,
-    //                completionHandler: @escaping codableHandlerClojure) {
-    //        var request = requestBuilder.patch(path: "\(self.path)/\(slug)")
-    //        request.httpBody = try? JSONEncoder().encode(data)
-    //        let task = buildTaskFor(request: request, completionHandler: completionHandler)
-    //        task.resume()
-    //    }
-    //
-    //    func buildTaskFor(request: URLRequest,
-    //                      completionHandler: @escaping codableHandlerClojure) -> URLSessionDataTask {
-    //        return config.session.dataTask(with: request) { [weak self] (data, response, error) in
-    //            guard let unwrappedSelf = self else { return }
-    //            guard let response = unwrappedSelf.buildResponse(data: data,
-    // response: response, error: error) as? DecodableResponseHandler<T> else { return }
-    //            DispatchQueue.main.async { completionHandler(response) }
-    //        }
-    //    }
-    //
-    //    public func buildResponse(data: Data?,
-    //                              response: URLResponse?, error: Error?) -> ResponseHandler {
-    //        return DecodableResponseHandler<T>(data: data, response: response, error: error)
-    //    }
+    public typealias CodableHandlerClojure = (DecodableResponseHandler<T>) -> Void
+    public func show(_ remoteId: Int,
+                     completionHandler: @escaping CodableHandlerClojure) {
+        self.show(slug: String(describing: remoteId), completionHandler: completionHandler)
+    }
+
+    public func show(slug: String,
+                     completionHandler: @escaping CodableHandlerClojure) {
+        let request = requestBuilder.get(path: "\(self.path)/\(slug)")
+        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        task.resume()
+    }
+
+    public func create(data: T,
+                       completionHandler: @escaping CodableHandlerClojure) {
+        var request = requestBuilder.post(path: self.path)
+        request.httpBody = try? JSONEncoder().encode(data)
+        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        task.resume()
+    }
+
+     public func update(_ remoteId: Int, data: T,
+                        completionHandler: @escaping CodableHandlerClojure) {
+        self.update(slug: String(describing: remoteId), data: data, completionHandler: completionHandler)
+    }
+
+    public func update(slug: String, data: T,
+                       completionHandler: @escaping CodableHandlerClojure) {
+        var request = requestBuilder.put(path: "\(self.path)/\(slug)")
+        request.httpBody = try? JSONEncoder().encode(data)
+        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        task.resume()
+    }
+
+    public func delete(_ remoteId: Int,
+                       completionHandler: @escaping CodableHandlerClojure) {
+        self.delete(slug: String(describing: remoteId), completionHandler: completionHandler)
+    }
+
+    public func delete(slug: String,
+                       completionHandler: @escaping CodableHandlerClojure) {
+        let request = requestBuilder.delete(path: "\(self.path)/\(slug)")
+        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        task.resume()
+    }
 }

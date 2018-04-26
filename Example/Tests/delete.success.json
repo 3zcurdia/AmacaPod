@@ -2,7 +2,7 @@
   "interactions" : [
     {
       "response" : {
-        "status" : 200,
+        "status" : 204,
         "headers" : {
           "Content-Type" : "application\/json; charset=utf-8",
           "Etag" : "W\/\"285aa3493609e719693ec5c60a6ffc8c\"",

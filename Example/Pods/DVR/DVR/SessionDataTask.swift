@@ -6,7 +6,6 @@ final class SessionDataTask: URLSessionDataTask {
 
     typealias Completion = (Data?, Foundation.URLResponse?, NSError?) -> Void
 
-
     // MARK: - Properties
 
     weak var session: Session!
@@ -19,7 +18,6 @@ final class SessionDataTask: URLSessionDataTask {
         return interaction?.response
     }
 
-
     // MARK: - Initializers
 
     init(session: Session, request: URLRequest, completion: (Completion)? = nil) {
@@ -27,7 +25,6 @@ final class SessionDataTask: URLSessionDataTask {
         self.request = request
         self.completion = completion
     }
-
 
     // MARK: - URLSessionTask
 
@@ -60,7 +57,7 @@ final class SessionDataTask: URLSessionDataTask {
             fatalError("[DVR] Recording is disabled.")
         }
 
-        let task = session.backingSession.dataTask(with: request, completionHandler: { [weak self] data, response, error in
+        let task = session.backingSession.dataTask(with: request, completionHandler: { [weak self] data, response, _ in
 
             //Ensure we have a response
             guard let response = response else {

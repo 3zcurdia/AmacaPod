@@ -14,7 +14,6 @@ class URLResponse: Foundation.URLResponse {
     }
 }
 
-
 extension Foundation.URLResponse {
     var dictionary: [String: Any] {
         if let url = url?.absoluteString {
@@ -24,7 +23,6 @@ extension Foundation.URLResponse {
         return [:]
     }
 }
-
 
 extension URLResponse {
     convenience init(dictionary: [String: Any]) {
