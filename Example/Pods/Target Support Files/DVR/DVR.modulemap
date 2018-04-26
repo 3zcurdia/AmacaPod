@@ -1,0 +1,6 @@
+framework module DVR {
+  umbrella header "DVR-umbrella.h"
+
+  export *
+  module * { export * }
+}

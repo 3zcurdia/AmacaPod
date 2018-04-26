@@ -7,158 +7,210 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C3E9E486879A39F382F70EE09AE3693 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		306AE91F2090DF0500EE9BBA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AE91E2090DF0500EE9BBA /* DataService.swift */; };
-		306AE9212090E17C00EE9BBA /* CodableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AE9202090E17C00EE9BBA /* CodableService.swift */; };
-		30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACB20903D3D0093D73A /* Authenticable.swift */; };
-		30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAACF209041A30093D73A /* StatusCode.swift */; };
-		30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD3209048BA0093D73A /* RequestBuilder.swift */; };
-		30DFAAD820904E720093D73A /* AmacaConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD720904E720093D73A /* AmacaConfigurable.swift */; };
-		30DFAADE209053680093D73A /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAADD209053680093D73A /* ResponseHandler.swift */; };
-		30DFAAE0209053970093D73A /* DataResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAADF209053970093D73A /* DataResponseHandler.swift */; };
-		30DFAAE620905B6E0093D73A /* DecodableResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */; };
-		30DFAAE8209060F40093D73A /* Clientable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAE7209060F40093D73A /* Clientable.swift */; };
-		30DFAAEA209062740093D73A /* DataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAE9209062740093D73A /* DataClient.swift */; };
-		30DFAAEC2090651F0093D73A /* CodableClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAEB2090651F0093D73A /* CodableClient.swift */; };
-		70F4F0659646A54488986E753C07CB1F /* Pods-Amaca_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */; };
-		B0ADB95561EC80BF0A426F03C4843331 /* Amaca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */; };
-		BA85A33EC9967CE0DEE2840F1286EBE0 /* Pods-Amaca_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F17E4A9D7D18730B3FEBE9F03892C722 /* Pods-Amaca_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8043B3AB6E9A9FEA6D00FB162F86C24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0DDEED29C7CBC989FA3D094B48CBC066 /* Amaca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA69AB7DE8ADFDE3E527B9886E785367 /* Amaca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E7A35649895EC7324D790C50EE9A490 /* DataResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14555270BBB0C4CF5880F70503F5ADBB /* DataResponseHandler.swift */; };
+		1578F2D629E66224C7A31CF68090AB43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4AEC4A728C081F2B6137E9AEF3703554 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D4B805210120E154E37FDB7D41615 /* SessionDataTask.swift */; };
+		4CD0778A76496533950E07BDDE09B35F /* DVR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDDF25F17797DE5B213F3D37E60F6F /* DVR-dummy.m */; };
+		4E2B6CDAF7FC6A41A2578CF712FC2D10 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D1CC2B3BC993AF3F3891F43AA900C /* RequestBuilder.swift */; };
+		50BF40416388088C8083BB3A5E62DFB3 /* Authenticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF7F51212793FD93EE9B2B735B86424 /* Authenticable.swift */; };
+		538DE26BC0E5232B9F8BDD069FD3739D /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1615A0142AAE9C3B876612361C010 /* HTTPURLResponse.swift */; };
+		575677E5222A5BDFBC2796E78C366CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6A4FD7D892280758F179A8D8159796E3 /* DecodableResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B601CC700827A7248528C6FF9231B9 /* DecodableResponseHandler.swift */; };
+		6ADC6D3FF945AF3973AC8285F6FB3802 /* CodableClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F84CA0D8A1512C56A51B564EAD76F6 /* CodableClient.swift */; };
+		6BF4CCE361FD94D03656CD2D35728449 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB9FB8CA854C7B00D1F4CE3B1C06C6 /* Session.swift */; };
+		705880F3D8E59A861BA53ACF6C84FA2E /* Pods-Amaca_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F17E4A9D7D18730B3FEBE9F03892C722 /* Pods-Amaca_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		707B89AA197614074965FB0773077C89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		71BCD5AD4E9B445B284D49F68C286B9A /* Amaca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E721BE77AD32D74709E34A152ADF5E42 /* Amaca-dummy.m */; };
+		8D1985E53B13CC7E705E5E060AA37242 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0C49740D2396D71D8CB83723F3174 /* URLResponse.swift */; };
+		9281F6C20D00FEB4B0D964A22ACCD995 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5581E3BF4AC63302C7CC53B67DEAD04 /* ResponseHandler.swift */; };
+		9C3687B6C589721F3CC78042D5C6DEEC /* SessionUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D52DC161BE37ED162EB3A14F12009F /* SessionUploadTask.swift */; };
+		A6D4A1D6D983AEC2551BFCD7E61A2DAE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D500C9D2D811D43900F58F6CE7E657 /* DataService.swift */; };
+		A73121E4969B084CB93906968CFF90EE /* Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5FC7490917C27EF310D51D15B3A3D /* Interaction.swift */; };
+		A9672C25D6B69C09D5D4B6722AA084D5 /* Cassette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9812E387D94D1FF4D778A5534D16BAF /* Cassette.swift */; };
+		ACD9FAA4556D19DFF9986DB19FAF8D56 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FEEEC88846DC842861151F857676C5 /* URLRequest.swift */; };
+		AE6E14EDB640A935623B425D31FEAD0E /* SessionDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810C41A4C460D9FA97A51C9F0796EC4 /* SessionDownloadTask.swift */; };
+		AFDA804D017A9234AB0ADCF0A73F7429 /* CodableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28262218439EE72943401000EB599D78 /* CodableService.swift */; };
+		BCC8E3312FCE186B2CF4C26DF2EE5F3F /* Pods-Amaca_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */; };
+		C8CB7DC071BC0856A9140FF5746FE986 /* DVR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5340D7E4513515F549FBC395AF5D56F8 /* DVR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC06F046644DE4201EC04205B00C5AF3 /* Clientable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC16B57A6B0922A42B4C26320F998F6B /* Clientable.swift */; };
+		E1264872A89D7D12A040631A84A74540 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D185E32DC4F4ED73DBA66BF689E3CC /* StatusCode.swift */; };
+		E2D5D4F7F9FE4C9ECDFC34C689212B59 /* DataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EFFA9C77960059DA4A01A5E7F0C22B /* DataClient.swift */; };
+		FF34E0C7EC2890A32EFFFCE60AA6165E /* AmacaConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5CF015E27C456B5B7489BD921D21C /* AmacaConfigurable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ED981A8C3789C21F47978D01CE2933E2 /* PBXContainerItemProxy */ = {
+		725C490146740FE13E1AE6472621042A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 509281970E7D63375344ABAA44B5C788;
+			remoteGlobalIDString = C4D832F6306AA6F7A0FF254A1A7C029A;
 			remoteInfo = Amaca;
+		};
+		FC48B59790EF5B850D7FA44D6E3EBAA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDFFBC335D9711223D2C14772875557;
+			remoteInfo = DVR;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		116C4578DB20327D733CCB20A2C86AA5 /* Amaca-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-prefix.pch"; sourceTree = "<group>"; };
-		20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		306AE91E2090DF0500EE9BBA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		306AE9202090E17C00EE9BBA /* CodableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableService.swift; sourceTree = "<group>"; };
-		30DFAACB20903D3D0093D73A /* Authenticable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticable.swift; sourceTree = "<group>"; };
-		30DFAACF209041A30093D73A /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
-		30DFAAD3209048BA0093D73A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
-		30DFAAD720904E720093D73A /* AmacaConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmacaConfigurable.swift; sourceTree = "<group>"; };
-		30DFAADD209053680093D73A /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
-		30DFAADF209053970093D73A /* DataResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseHandler.swift; sourceTree = "<group>"; };
-		30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableResponseHandler.swift; sourceTree = "<group>"; };
-		30DFAAE7209060F40093D73A /* Clientable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clientable.swift; sourceTree = "<group>"; };
-		30DFAAE9209062740093D73A /* DataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClient.swift; sourceTree = "<group>"; };
-		30DFAAEB2090651F0093D73A /* CodableClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableClient.swift; sourceTree = "<group>"; };
+		0359149FFF796BAE0C77653D0A88F1A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EFFA9C77960059DA4A01A5E7F0C22B /* DataClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataClient.swift; path = Amaca/Classes/DataClient.swift; sourceTree = "<group>"; };
+		11D185E32DC4F4ED73DBA66BF689E3CC /* StatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = Amaca/Classes/StatusCode.swift; sourceTree = "<group>"; };
+		13B601CC700827A7248528C6FF9231B9 /* DecodableResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodableResponseHandler.swift; path = Amaca/Classes/DecodableResponseHandler.swift; sourceTree = "<group>"; };
+		14555270BBB0C4CF5880F70503F5ADBB /* DataResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResponseHandler.swift; path = Amaca/Classes/DataResponseHandler.swift; sourceTree = "<group>"; };
+		20C5CF015E27C456B5B7489BD921D21C /* AmacaConfigurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmacaConfigurable.swift; path = Amaca/Classes/AmacaConfigurable.swift; sourceTree = "<group>"; };
+		20D52DC161BE37ED162EB3A14F12009F /* SessionUploadTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionUploadTask.swift; path = DVR/SessionUploadTask.swift; sourceTree = "<group>"; };
+		28262218439EE72943401000EB599D78 /* CodableService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableService.swift; path = Amaca/Classes/CodableService.swift; sourceTree = "<group>"; };
 		354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Amaca_Tests-dummy.m"; sourceTree = "<group>"; };
-		3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
-		4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4072EFE3639011B9CC0E5DB9875932 /* Amaca.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amaca.xcconfig; sourceTree = "<group>"; };
+		3EC7AAAD218F4969B085B4C329FFDC81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		412CBE190EAEF0B5D161677AE61912C2 /* DVR-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DVR-prefix.pch"; sourceTree = "<group>"; };
+		5340D7E4513515F549FBC395AF5D56F8 /* DVR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DVR-umbrella.h"; sourceTree = "<group>"; };
+		55F1615A0142AAE9C3B876612361C010 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPURLResponse.swift; path = DVR/HTTPURLResponse.swift; sourceTree = "<group>"; };
+		58E598C26E5ED48293CB4C452339F462 /* Amaca-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-prefix.pch"; sourceTree = "<group>"; };
 		631BE4274B0FD62DCF5A27EBAF298507 /* Pods-Amaca_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Amaca_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		662AF08922D146DED9A10AD9A76462E2 /* Amaca.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Amaca.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amaca.xcconfig; sourceTree = "<group>"; };
+		6BF7F51212793FD93EE9B2B735B86424 /* Authenticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticable.swift; path = Amaca/Classes/Authenticable.swift; sourceTree = "<group>"; };
+		6D6DAA21ABDA8FCBEC78939E3896A229 /* Amaca.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Amaca.modulemap; sourceTree = "<group>"; };
 		7129CB068BF641599AB58D4A478E5DB1 /* Pods-Amaca_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Amaca_Tests-resources.sh"; sourceTree = "<group>"; };
 		761AFA7EC6CF3369B5EB926918E5D8C7 /* Pods-Amaca_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Amaca_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		788EDD9D89E701690FAC6F4969E7C442 /* Pods_Amaca_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaca_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7898A046EAD68189B0B30B4FA15E4D73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		78BF1F39C258EF8100017F7B95912EE8 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E495177D11077EE3786CEAD987AB146 /* Amaca.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Amaca.modulemap; sourceTree = "<group>"; };
+		94315B9039C2D24685E5723EDB9E9E14 /* Amaca.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Amaca.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BD1B38EABC6D4390D32FC25638A8D39 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9EC0C49740D2396D71D8CB83723F3174 /* URLResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLResponse.swift; path = DVR/URLResponse.swift; sourceTree = "<group>"; };
+		A3502FE19C8936990203522E0E9AACC4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A4470E430D138C70DCE5F45101BEF81A /* DVR.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DVR.xcconfig; sourceTree = "<group>"; };
+		B204FF78025C20164B603346B6A60DDE /* DVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D500C9D2D811D43900F58F6CE7E657 /* DataService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Amaca/Classes/DataService.swift; sourceTree = "<group>"; };
+		B4DDDF25F17797DE5B213F3D37E60F6F /* DVR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DVR-dummy.m"; sourceTree = "<group>"; };
+		B7529FDA4F09CECAD72F376088FAF66C /* Pods_Amaca_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaca_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D331B10FE6658821A12E7C83CD567E /* Pods-Amaca_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Amaca_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8F84CA0D8A1512C56A51B564EAD76F6 /* CodableClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableClient.swift; path = Amaca/Classes/CodableClient.swift; sourceTree = "<group>"; };
+		BA69AB7DE8ADFDE3E527B9886E785367 /* Amaca-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-umbrella.h"; sourceTree = "<group>"; };
 		BC997D73F7C41313D3F2E28988E369D1 /* Pods-Amaca_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Amaca_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C0DB9FB8CA854C7B00D1F4CE3B1C06C6 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = DVR/Session.swift; sourceTree = "<group>"; };
+		C3FEEEC88846DC842861151F857676C5 /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = DVR/URLRequest.swift; sourceTree = "<group>"; };
+		C5581E3BF4AC63302C7CC53B67DEAD04 /* ResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseHandler.swift; path = Amaca/Classes/ResponseHandler.swift; sourceTree = "<group>"; };
 		CE0F037B347418367C52606829101DA5 /* Pods-Amaca_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Amaca_Tests.modulemap"; sourceTree = "<group>"; };
-		E6D69756E9C620FB373F299BEF50A7B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1D4B805210120E154E37FDB7D41615 /* SessionDataTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDataTask.swift; path = DVR/SessionDataTask.swift; sourceTree = "<group>"; };
+		E721BE77AD32D74709E34A152ADF5E42 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
 		EAC0F744B1B4CC4EDB1A97C80312AE60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC16B57A6B0922A42B4C26320F998F6B /* Clientable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clientable.swift; path = Amaca/Classes/Clientable.swift; sourceTree = "<group>"; };
 		F17E4A9D7D18730B3FEBE9F03892C722 /* Pods-Amaca_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Amaca_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F2C5FC7490917C27EF310D51D15B3A3D /* Interaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interaction.swift; path = DVR/Interaction.swift; sourceTree = "<group>"; };
 		F2F8DC106CBD6B8AAD34FCFED34530F2 /* Pods-Amaca_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Amaca_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F63D1CC2B3BC993AF3F3891F43AA900C /* RequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestBuilder.swift; path = Amaca/Classes/RequestBuilder.swift; sourceTree = "<group>"; };
+		F810C41A4C460D9FA97A51C9F0796EC4 /* SessionDownloadTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDownloadTask.swift; path = DVR/SessionDownloadTask.swift; sourceTree = "<group>"; };
+		F9812E387D94D1FF4D778A5534D16BAF /* Cassette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cassette.swift; path = DVR/Cassette.swift; sourceTree = "<group>"; };
+		FC89E50F8D034708E681E40007E65B30 /* DVR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DVR.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		400B2F24047FB2B1AD0BBA2336298135 /* Frameworks */ = {
+		4F2C8518FC373425A5ECD370331A4A5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8043B3AB6E9A9FEA6D00FB162F86C24 /* Foundation.framework in Frameworks */,
+				575677E5222A5BDFBC2796E78C366CFE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC1BBD44571A587CDEA3A6DD717EEDB1 /* Frameworks */ = {
+		5008F87D46DEA85A9029DDADD36F902A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C3E9E486879A39F382F70EE09AE3693 /* Foundation.framework in Frameworks */,
+				1578F2D629E66224C7A31CF68090AB43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F562109339326CFB5D5417C276C1C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707B89AA197614074965FB0773077C89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		010C09B26B3F7D80026CF93648132128 /* Support Files */ = {
+		409C75A67FA3F4B1828073269CFEF727 /* DVR */ = {
 			isa = PBXGroup;
 			children = (
-				9E495177D11077EE3786CEAD987AB146 /* Amaca.modulemap */,
-				6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */,
-				3C1C27BD2ECC4412A10C49BB47907405 /* Amaca-dummy.m */,
-				116C4578DB20327D733CCB20A2C86AA5 /* Amaca-prefix.pch */,
-				65A699796661DAA6ED019E9B55FA85C9 /* Amaca-umbrella.h */,
-				E6D69756E9C620FB373F299BEF50A7B7 /* Info.plist */,
+				F9812E387D94D1FF4D778A5534D16BAF /* Cassette.swift */,
+				55F1615A0142AAE9C3B876612361C010 /* HTTPURLResponse.swift */,
+				F2C5FC7490917C27EF310D51D15B3A3D /* Interaction.swift */,
+				C0DB9FB8CA854C7B00D1F4CE3B1C06C6 /* Session.swift */,
+				DF1D4B805210120E154E37FDB7D41615 /* SessionDataTask.swift */,
+				F810C41A4C460D9FA97A51C9F0796EC4 /* SessionDownloadTask.swift */,
+				20D52DC161BE37ED162EB3A14F12009F /* SessionUploadTask.swift */,
+				C3FEEEC88846DC842861151F857676C5 /* URLRequest.swift */,
+				9EC0C49740D2396D71D8CB83723F3174 /* URLResponse.swift */,
+				97008479145AEF949B0AA75C0EB75608 /* Support Files */,
+			);
+			path = DVR;
+			sourceTree = "<group>";
+		};
+		4BCB051C14A435559440EEB3CB5CB3DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D6DAA21ABDA8FCBEC78939E3896A229 /* Amaca.modulemap */,
+				3B4072EFE3639011B9CC0E5DB9875932 /* Amaca.xcconfig */,
+				E721BE77AD32D74709E34A152ADF5E42 /* Amaca-dummy.m */,
+				58E598C26E5ED48293CB4C452339F462 /* Amaca-prefix.pch */,
+				BA69AB7DE8ADFDE3E527B9886E785367 /* Amaca-umbrella.h */,
+				3EC7AAAD218F4969B085B4C329FFDC81 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Amaca";
 			sourceTree = "<group>";
 		};
-		1B4B3C4333B345D27DB580ABB81E2FE5 /* Pod */ = {
+		6C4E16FDB0649598A64C38AC8AC719B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				662AF08922D146DED9A10AD9A76462E2 /* Amaca.podspec */,
-				7898A046EAD68189B0B30B4FA15E4D73 /* LICENSE */,
-				20939901AC4ABE1EF3A19C8B295ADF43 /* README.md */,
+				78BF1F39C258EF8100017F7B95912EE8 /* Amaca.framework */,
+				B204FF78025C20164B603346B6A60DDE /* DVR.framework */,
+				B7529FDA4F09CECAD72F376088FAF66C /* Pods_Amaca_Tests.framework */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		1D6A27B470E9FE6EE2D05130D8DCB4D9 /* Amaca */ = {
-			isa = PBXGroup;
-			children = (
-				30DFAAC820903A5A0093D73A /* Classes */,
-				1B4B3C4333B345D27DB580ABB81E2FE5 /* Pod */,
-				010C09B26B3F7D80026CF93648132128 /* Support Files */,
-			);
-			name = Amaca;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		30DFAAC820903A5A0093D73A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				30DFAACB20903D3D0093D73A /* Authenticable.swift */,
-				30DFAACF209041A30093D73A /* StatusCode.swift */,
-				30DFAAD3209048BA0093D73A /* RequestBuilder.swift */,
-				30DFAAD720904E720093D73A /* AmacaConfigurable.swift */,
-				30DFAADD209053680093D73A /* ResponseHandler.swift */,
-				30DFAADF209053970093D73A /* DataResponseHandler.swift */,
-				30DFAAE520905B6E0093D73A /* DecodableResponseHandler.swift */,
-				30DFAAE7209060F40093D73A /* Clientable.swift */,
-				30DFAAE9209062740093D73A /* DataClient.swift */,
-				306AE91E2090DF0500EE9BBA /* DataService.swift */,
-				30DFAAEB2090651F0093D73A /* CodableClient.swift */,
-				306AE9202090E17C00EE9BBA /* CodableService.swift */,
-			);
-			name = Classes;
-			path = Amaca/Classes;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				FEBC0DF9270522B78370FD499B6E2E44 /* Development Pods */,
+				C76267D7D43EA5F5CF3A3E1BACBCCE8C /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B2875082B3CD7C7EA5D7387DBCE13B9E /* Products */,
+				981F47320473B1FEEC8FA239F90694D5 /* Pods */,
+				6C4E16FDB0649598A64C38AC8AC719B7 /* Products */,
 				FE38177535B0683C18AB0531DE8C5890 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		97008479145AEF949B0AA75C0EB75608 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC89E50F8D034708E681E40007E65B30 /* DVR.modulemap */,
+				A4470E430D138C70DCE5F45101BEF81A /* DVR.xcconfig */,
+				B4DDDF25F17797DE5B213F3D37E60F6F /* DVR-dummy.m */,
+				412CBE190EAEF0B5D161677AE61912C2 /* DVR-prefix.pch */,
+				5340D7E4513515F549FBC395AF5D56F8 /* DVR-umbrella.h */,
+				0359149FFF796BAE0C77653D0A88F1A9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DVR";
+			sourceTree = "<group>";
+		};
+		981F47320473B1FEEC8FA239F90694D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				409C75A67FA3F4B1828073269CFEF727 /* DVR */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AEB7746F94E27CC98F230A8909C80678 /* Pods-Amaca_Tests */ = {
@@ -179,21 +231,42 @@
 			path = "Target Support Files/Pods-Amaca_Tests";
 			sourceTree = "<group>";
 		};
-		B2875082B3CD7C7EA5D7387DBCE13B9E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */,
-				788EDD9D89E701690FAC6F4969E7C442 /* Pods_Amaca_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76267D7D43EA5F5CF3A3E1BACBCCE8C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA5ED3217D94EEEC9492D15114C70B3C /* Amaca */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CA5ED3217D94EEEC9492D15114C70B3C /* Amaca */ = {
+			isa = PBXGroup;
+			children = (
+				20C5CF015E27C456B5B7489BD921D21C /* AmacaConfigurable.swift */,
+				6BF7F51212793FD93EE9B2B735B86424 /* Authenticable.swift */,
+				EC16B57A6B0922A42B4C26320F998F6B /* Clientable.swift */,
+				B8F84CA0D8A1512C56A51B564EAD76F6 /* CodableClient.swift */,
+				28262218439EE72943401000EB599D78 /* CodableService.swift */,
+				09EFFA9C77960059DA4A01A5E7F0C22B /* DataClient.swift */,
+				14555270BBB0C4CF5880F70503F5ADBB /* DataResponseHandler.swift */,
+				B3D500C9D2D811D43900F58F6CE7E657 /* DataService.swift */,
+				13B601CC700827A7248528C6FF9231B9 /* DecodableResponseHandler.swift */,
+				F63D1CC2B3BC993AF3F3891F43AA900C /* RequestBuilder.swift */,
+				C5581E3BF4AC63302C7CC53B67DEAD04 /* ResponseHandler.swift */,
+				11D185E32DC4F4ED73DBA66BF689E3CC /* StatusCode.swift */,
+				EDC70AE2B643C65C5DA19F41600796A2 /* Pod */,
+				4BCB051C14A435559440EEB3CB5CB3DE /* Support Files */,
+			);
+			name = Amaca;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -204,6 +277,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EDC70AE2B643C65C5DA19F41600796A2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				94315B9039C2D24685E5723EDB9E9E14 /* Amaca.podspec */,
+				A3502FE19C8936990203522E0E9AACC4 /* LICENSE */,
+				9BD1B38EABC6D4390D32FC25638A8D39 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		FE38177535B0683C18AB0531DE8C5890 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,43 +295,62 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FEBC0DF9270522B78370FD499B6E2E44 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1D6A27B470E9FE6EE2D05130D8DCB4D9 /* Amaca */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5020ACC08169EE27D651238160281867 /* Headers */ = {
+		139C669D85888E53F37D1FAB7731FAB2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0ADB95561EC80BF0A426F03C4843331 /* Amaca-umbrella.h in Headers */,
+				705880F3D8E59A861BA53ACF6C84FA2E /* Pods-Amaca_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7402AA1C726DC115194A149873450E3B /* Headers */ = {
+		38D9F6E6A29814C61CA644405850544A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA85A33EC9967CE0DEE2840F1286EBE0 /* Pods-Amaca_Tests-umbrella.h in Headers */,
+				0DDEED29C7CBC989FA3D094B48CBC066 /* Amaca-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2AC4A87A1218D6C430ED246E63A7CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CB7DC071BC0856A9140FF5746FE986 /* DVR-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		509281970E7D63375344ABAA44B5C788 /* Amaca */ = {
+		51E2784E22282F259DE5931854DE0B90 /* Pods-Amaca_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 541E4C69D0B7C1CC135943A261A61B1B /* Build configuration list for PBXNativeTarget "Amaca" */;
+			buildConfigurationList = 2CF854D1C9DF39D256585575D7F3FBEB /* Build configuration list for PBXNativeTarget "Pods-Amaca_Tests" */;
 			buildPhases = (
-				988F41865527C12BA86B258C47FEE1E4 /* Sources */,
-				400B2F24047FB2B1AD0BBA2336298135 /* Frameworks */,
-				5020ACC08169EE27D651238160281867 /* Headers */,
+				78C0AF5303E85C173C9263DB5138191D /* Sources */,
+				D1F562109339326CFB5D5417C276C1C0 /* Frameworks */,
+				139C669D85888E53F37D1FAB7731FAB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB41CA23CCB37F48858C0CA00CCDBEFF /* PBXTargetDependency */,
+				361CF5304477C3D8028C0C337B889B96 /* PBXTargetDependency */,
+			);
+			name = "Pods-Amaca_Tests";
+			productName = "Pods-Amaca_Tests";
+			productReference = B7529FDA4F09CECAD72F376088FAF66C /* Pods_Amaca_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4D832F6306AA6F7A0FF254A1A7C029A /* Amaca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA6004D7CFF5FE6F47ECE1E784717177 /* Build configuration list for PBXNativeTarget "Amaca" */;
+			buildPhases = (
+				5370F5AC2DAAB3D4935664D381F850D0 /* Sources */,
+				4F2C8518FC373425A5ECD370331A4A5C /* Frameworks */,
+				38D9F6E6A29814C61CA644405850544A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -256,25 +358,24 @@
 			);
 			name = Amaca;
 			productName = Amaca;
-			productReference = 4D4EA2F6D257920B22F22720246BD115 /* Amaca.framework */;
+			productReference = 78BF1F39C258EF8100017F7B95912EE8 /* Amaca.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5D686F37469B02D44331DEE9DADD3B4A /* Pods-Amaca_Tests */ = {
+		FDDFFBC335D9711223D2C14772875557 /* DVR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A49A2BA8A073F81DB4868C30DE7D85DB /* Build configuration list for PBXNativeTarget "Pods-Amaca_Tests" */;
+			buildConfigurationList = D0291EC837BEFCF527210869846FEED4 /* Build configuration list for PBXNativeTarget "DVR" */;
 			buildPhases = (
-				B96AAE32B94AE604332114203B5977A7 /* Sources */,
-				EC1BBD44571A587CDEA3A6DD717EEDB1 /* Frameworks */,
-				7402AA1C726DC115194A149873450E3B /* Headers */,
+				225DF2A5267FD43BDA8C74173F4EDCBF /* Sources */,
+				5008F87D46DEA85A9029DDADD36F902A /* Frameworks */,
+				8E2AC4A87A1218D6C430ED246E63A7CC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C63412E20CA491BCD242BA00A5CFEB0E /* PBXTargetDependency */,
 			);
-			name = "Pods-Amaca_Tests";
-			productName = "Pods-Amaca_Tests";
-			productReference = 788EDD9D89E701690FAC6F4969E7C442 /* Pods_Amaca_Tests.framework */;
+			name = DVR;
+			productName = DVR;
+			productReference = B204FF78025C20164B603346B6A60DDE /* DVR.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,11 +386,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					509281970E7D63375344ABAA44B5C788 = {
-						LastSwiftMigration = 0930;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -299,62 +395,85 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B2875082B3CD7C7EA5D7387DBCE13B9E /* Products */;
+			productRefGroup = 6C4E16FDB0649598A64C38AC8AC719B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				509281970E7D63375344ABAA44B5C788 /* Amaca */,
-				5D686F37469B02D44331DEE9DADD3B4A /* Pods-Amaca_Tests */,
+				C4D832F6306AA6F7A0FF254A1A7C029A /* Amaca */,
+				FDDFFBC335D9711223D2C14772875557 /* DVR */,
+				51E2784E22282F259DE5931854DE0B90 /* Pods-Amaca_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		988F41865527C12BA86B258C47FEE1E4 /* Sources */ = {
+		225DF2A5267FD43BDA8C74173F4EDCBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B622DA4963F0BFC9C4097EF57EE2A298 /* Amaca-dummy.m in Sources */,
-				30DFAAE620905B6E0093D73A /* DecodableResponseHandler.swift in Sources */,
-				30DFAAEC2090651F0093D73A /* CodableClient.swift in Sources */,
-				306AE9212090E17C00EE9BBA /* CodableService.swift in Sources */,
-				30DFAAE8209060F40093D73A /* Clientable.swift in Sources */,
-				30DFAAE0209053970093D73A /* DataResponseHandler.swift in Sources */,
-				30DFAACC20903D3D0093D73A /* Authenticable.swift in Sources */,
-				306AE91F2090DF0500EE9BBA /* DataService.swift in Sources */,
-				30DFAAD0209041A30093D73A /* StatusCode.swift in Sources */,
-				30DFAAD4209048BA0093D73A /* RequestBuilder.swift in Sources */,
-				30DFAAD820904E720093D73A /* AmacaConfigurable.swift in Sources */,
-				30DFAAEA209062740093D73A /* DataClient.swift in Sources */,
-				30DFAADE209053680093D73A /* ResponseHandler.swift in Sources */,
+				A9672C25D6B69C09D5D4B6722AA084D5 /* Cassette.swift in Sources */,
+				4CD0778A76496533950E07BDDE09B35F /* DVR-dummy.m in Sources */,
+				538DE26BC0E5232B9F8BDD069FD3739D /* HTTPURLResponse.swift in Sources */,
+				A73121E4969B084CB93906968CFF90EE /* Interaction.swift in Sources */,
+				6BF4CCE361FD94D03656CD2D35728449 /* Session.swift in Sources */,
+				4AEC4A728C081F2B6137E9AEF3703554 /* SessionDataTask.swift in Sources */,
+				AE6E14EDB640A935623B425D31FEAD0E /* SessionDownloadTask.swift in Sources */,
+				9C3687B6C589721F3CC78042D5C6DEEC /* SessionUploadTask.swift in Sources */,
+				ACD9FAA4556D19DFF9986DB19FAF8D56 /* URLRequest.swift in Sources */,
+				8D1985E53B13CC7E705E5E060AA37242 /* URLResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B96AAE32B94AE604332114203B5977A7 /* Sources */ = {
+		5370F5AC2DAAB3D4935664D381F850D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70F4F0659646A54488986E753C07CB1F /* Pods-Amaca_Tests-dummy.m in Sources */,
+				71BCD5AD4E9B445B284D49F68C286B9A /* Amaca-dummy.m in Sources */,
+				FF34E0C7EC2890A32EFFFCE60AA6165E /* AmacaConfigurable.swift in Sources */,
+				50BF40416388088C8083BB3A5E62DFB3 /* Authenticable.swift in Sources */,
+				CC06F046644DE4201EC04205B00C5AF3 /* Clientable.swift in Sources */,
+				6ADC6D3FF945AF3973AC8285F6FB3802 /* CodableClient.swift in Sources */,
+				AFDA804D017A9234AB0ADCF0A73F7429 /* CodableService.swift in Sources */,
+				E2D5D4F7F9FE4C9ECDFC34C689212B59 /* DataClient.swift in Sources */,
+				0E7A35649895EC7324D790C50EE9A490 /* DataResponseHandler.swift in Sources */,
+				A6D4A1D6D983AEC2551BFCD7E61A2DAE /* DataService.swift in Sources */,
+				6A4FD7D892280758F179A8D8159796E3 /* DecodableResponseHandler.swift in Sources */,
+				4E2B6CDAF7FC6A41A2578CF712FC2D10 /* RequestBuilder.swift in Sources */,
+				9281F6C20D00FEB4B0D964A22ACCD995 /* ResponseHandler.swift in Sources */,
+				E1264872A89D7D12A040631A84A74540 /* StatusCode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C0AF5303E85C173C9263DB5138191D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC8E3312FCE186B2CF4C26DF2EE5F3F /* Pods-Amaca_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C63412E20CA491BCD242BA00A5CFEB0E /* PBXTargetDependency */ = {
+		361CF5304477C3D8028C0C337B889B96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DVR;
+			target = FDDFFBC335D9711223D2C14772875557 /* DVR */;
+			targetProxy = FC48B59790EF5B850D7FA44D6E3EBAA0 /* PBXContainerItemProxy */;
+		};
+		DB41CA23CCB37F48858C0CA00CCDBEFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Amaca;
-			target = 509281970E7D63375344ABAA44B5C788 /* Amaca */;
-			targetProxy = ED981A8C3789C21F47978D01CE2933E2 /* PBXContainerItemProxy */;
+			target = C4D832F6306AA6F7A0FF254A1A7C029A /* Amaca */;
+			targetProxy = 725C490146740FE13E1AE6472621042A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		232FB2C7F4DF9010A8CAFB9B0047848E /* Release */ = {
+		4B9651C2A724500621154897E7E03B65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */;
+			baseConfigurationReference = 3B4072EFE3639011B9CC0E5DB9875932 /* Amaca.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -367,7 +486,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Amaca/Amaca-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Amaca/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Amaca/Amaca.modulemap";
 				PRODUCT_MODULE_NAME = Amaca;
@@ -383,6 +502,73 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		5AFA2EA5DED59FB59491A116EFB00931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761AFA7EC6CF3369B5EB926918E5D8C7 /* Pods-Amaca_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Amaca_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Amaca_Tests/Pods-Amaca_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A22A1409782CCCCFA48A02F4F20CDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4470E430D138C70DCE5F45101BEF81A /* DVR.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DVR/DVR-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DVR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DVR/DVR.modulemap";
+				PRODUCT_MODULE_NAME = DVR;
+				PRODUCT_NAME = DVR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -447,11 +633,10 @@
 			};
 			name = Debug;
 		};
-		9FAA690B38EAE8C5CD556EC3A190AE95 /* Release */ = {
+		A40AB5223B9A7D75D5AA15EC8BA054CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 761AFA7EC6CF3369B5EB926918E5D8C7 /* Pods-Amaca_Tests.release.xcconfig */;
+			baseConfigurationReference = A4470E430D138C70DCE5F45101BEF81A /* DVR.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -461,26 +646,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Amaca_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DVR/DVR-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DVR/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Amaca_Tests/Pods-Amaca_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/DVR/DVR.modulemap";
+				PRODUCT_MODULE_NAME = DVR;
+				PRODUCT_NAME = DVR;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A83565D136835BFEB9DA9AD4EDD5524C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4072EFE3639011B9CC0E5DB9875932 /* Amaca.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Amaca/Amaca-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Amaca/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Amaca/Amaca.modulemap";
+				PRODUCT_MODULE_NAME = Amaca;
+				PRODUCT_NAME = Amaca;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -540,40 +756,7 @@
 			};
 			name = Release;
 		};
-		CD5C1BF2572475253AD688B81A745C91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CE0D14E99F83709B2A647374C464268 /* Amaca.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Amaca/Amaca-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Amaca/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Amaca/Amaca.modulemap";
-				PRODUCT_MODULE_NAME = Amaca;
-				PRODUCT_NAME = Amaca;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D557E5C70112EB3C008DDBB311897992 /* Debug */ = {
+		B5BD8EDEEEC39EEBEB185DC8C8841E09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 631BE4274B0FD62DCF5A27EBAF298507 /* Pods-Amaca_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -611,6 +794,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2CF854D1C9DF39D256585575D7F3FBEB /* Build configuration list for PBXNativeTarget "Pods-Amaca_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5BD8EDEEEC39EEBEB185DC8C8841E09 /* Debug */,
+				5AFA2EA5DED59FB59491A116EFB00931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -620,20 +812,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		541E4C69D0B7C1CC135943A261A61B1B /* Build configuration list for PBXNativeTarget "Amaca" */ = {
+		AA6004D7CFF5FE6F47ECE1E784717177 /* Build configuration list for PBXNativeTarget "Amaca" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD5C1BF2572475253AD688B81A745C91 /* Debug */,
-				232FB2C7F4DF9010A8CAFB9B0047848E /* Release */,
+				A83565D136835BFEB9DA9AD4EDD5524C /* Debug */,
+				4B9651C2A724500621154897E7E03B65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A49A2BA8A073F81DB4868C30DE7D85DB /* Build configuration list for PBXNativeTarget "Pods-Amaca_Tests" */ = {
+		D0291EC837BEFCF527210869846FEED4 /* Build configuration list for PBXNativeTarget "DVR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D557E5C70112EB3C008DDBB311897992 /* Debug */,
-				9FAA690B38EAE8C5CD556EC3A190AE95 /* Release */,
+				7A22A1409782CCCCFA48A02F4F20CDD1 /* Debug */,
+				A40AB5223B9A7D75D5AA15EC8BA054CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

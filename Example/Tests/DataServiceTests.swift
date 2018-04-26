@@ -8,25 +8,29 @@
 
 import XCTest
 import Amaca
+import DVR
 
-class RESTDataClientTests: XCTestCase {
+class DataServiceTests: XCTestCase {
     let url = URL(string: "https://jsonplaceholder.typicode.com")!
-    var service: DataService!
 
     override func setUp() {
         super.setUp()
-        let session = URLSession.shared
-        let config = MockConfig(session: session, baseUrl: url)
-        self.service = DataService(config: config, path: "/posts", auth: nil)
     }
 
     override func tearDown() {
         super.tearDown()
     }
+    
+    func buildService(for session: URLSession) -> DataService {
+        let config = MockConfig(session: session, baseUrl: url)
+        return DataService(config: config, path: "/posts", auth: nil)
+    }
 
     func testIndexSuccess() {
+        let session = Session(cassetteName: "index.success")
+        let service = buildService(for: session)
         let exp = expectation(description: "Successfull index")
-        self.service.index { response in
+        service.index { response in
             exp.fulfill()
             XCTAssertNotNil(response)
             XCTAssertNil(response.error)
@@ -39,8 +43,10 @@ class RESTDataClientTests: XCTestCase {
     }
 
     func testShowSuccess() {
+        let session = Session(cassetteName: "show.success")
+        let service = buildService(for: session)
         let exp = expectation(description: "Successfull show")
-        self.service.show(1) { response in
+        service.show(1) { response in
             exp.fulfill()
             XCTAssertNotNil(response)
             XCTAssertNil(response.error)
@@ -53,8 +59,10 @@ class RESTDataClientTests: XCTestCase {
     }
 
     func testCreateSuccess() {
+        let session = Session(cassetteName: "create.success")
+        let service = buildService(for: session)
         let exp = expectation(description: "Successfull create")
-        self.service.create(data: "{}".data(using: .utf8)!) { response in
+        service.create(data: "{}".data(using: .utf8)!) { response in
             exp.fulfill()
             XCTAssertNotNil(response)
             XCTAssertNil(response.error)
@@ -67,8 +75,10 @@ class RESTDataClientTests: XCTestCase {
     }
 
     func testUpdateSuccess() {
+        let session = Session(cassetteName: "update.success")
+        let service = buildService(for: session)
         let exp = expectation(description: "Successfull update")
-        self.service.update(1, data: "{}".data(using: .utf8)!) { response in
+        service.update(101, data: "{}".data(using: .utf8)!) { response in
             exp.fulfill()
             XCTAssertNotNil(response)
             XCTAssertNil(response.error)
@@ -81,8 +91,10 @@ class RESTDataClientTests: XCTestCase {
     }
 
     func testDeleteSuccess() {
+        let session = Session(cassetteName: "delete.success")
+        let service = buildService(for: session)
         let exp = expectation(description: "Successfull delete")
-        self.service.delete(1) { response in
+        service.delete(102) { response in
             exp.fulfill()
             XCTAssertNotNil(response)
             XCTAssertNil(response.error)

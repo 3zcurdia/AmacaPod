@@ -1,6 +1,6 @@
 use_frameworks!
 target 'Amaca_Tests' do
   pod 'Amaca', :path => '../'
-  
+  pod 'DVR'
   
 end
