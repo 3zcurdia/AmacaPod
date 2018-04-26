@@ -1,9 +1,10 @@
 # Amaca
 
-[![CI Status](http://img.shields.io/travis/3zcurdia/Amaca.svg?style=flat)](https://travis-ci.org/3zcurdia/amaca)
-[![Version](https://img.shields.io/cocoapods/v/Amaca.svg?style=flat)](http://cocoapods.org/pods/amaca)
-[![License](https://img.shields.io/cocoapods/l/Amaca.svg?style=flat)](http://cocoapods.org/pods/amaca)
-[![Platform](https://img.shields.io/cocoapods/p/Amaca.svg?style=flat)](http://cocoapods.org/pods/amaca)
+[![CI Status](http://img.shields.io/travis/3zcurdia/Amaca.svg?style=flat)](https://travis-ci.org/3zcurdia/Amaca)
+[![Version](https://img.shields.io/cocoapods/v/Amaca.svg?style=flat)](http://cocoapods.org/pods/Amaca)
+[![License](https://img.shields.io/cocoapods/l/Amaca.svg?style=flat)](http://cocoapods.org/pods/Amaca)
+[![Platform](https://img.shields.io/cocoapods/p/Amaca.svg?style=flat)](http://cocoapods.org/pods/Amaca)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0a0c7da98ac2f5fc09b0/maintainability)](https://codeclimate.com/github/3zcurdia/Amaca/maintainability)
 
 ## Example
 
