@@ -12,6 +12,9 @@ public class CodableClient<T>: Clientable where T: Codable {
     let path: String
     let requestBuilder: RequestBuilder
 
+    public var encoder: JSONEncoder = JSONEncoder()
+    public var decoder: JSONDecoder = JSONDecoder()
+
     public init(config: AmacaConfigurable, path: String,
                 auth: Authenticable?, contentType: String = "application/json") {
         self.config = config
@@ -23,17 +26,23 @@ public class CodableClient<T>: Clientable where T: Codable {
 
     public func listTaskFor(request: URLRequest,
                      completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) -> URLSessionDataTask {
-        return config.session.dataTask(with: request) { (data, response, error) in
-            let response = DecodableResponseHandler<[T]>(data: data, response: response, error: error)
-            DispatchQueue.main.async { completionHandler(response) }
+        return config.session.dataTask(with: request) { [weak self] (data, response, error) in
+            guard let that = self else { return }
+            var decodedResponse = DecodableResponseHandler<[T]>()
+            decodedResponse.decoder = that.decoder
+            decodedResponse.parse(data: data, response: response, error: error)
+            DispatchQueue.main.async { completionHandler(decodedResponse) }
         }
     }
 
     public func taskFor(request: URLRequest,
                      completionHandler: @escaping (DecodableResponseHandler<T>) -> Void) -> URLSessionDataTask {
-        return config.session.dataTask(with: request) { (data, response, error) in
-            let response = DecodableResponseHandler<T>(data: data, response: response, error: error)
-            DispatchQueue.main.async { completionHandler(response) }
+        return config.session.dataTask(with: request) { [weak self] (data, response, error) in
+            guard let that = self else { return }
+            var decodedResponse = DecodableResponseHandler<T>()
+            decodedResponse.decoder = that.decoder
+            decodedResponse.parse(data: data, response: response, error: error)
+            DispatchQueue.main.async { completionHandler(decodedResponse) }
         }
     }
 }

@@ -9,12 +9,20 @@ import Foundation
 
 public struct DecodableResponseHandler<T>:ResponseHandler where T: Decodable {
     public typealias DataType = T
-    public let status: StatusCode
-    public let response: HTTPURLResponse?
-    public let error: Error?
-    public let data: DataType?
+    public var status: StatusCode = .unkown
+    public var response: HTTPURLResponse?
+    public var error: Error?
+    public var data: DataType?
+
+    public var decoder = JSONDecoder()
+
+    public init() {}
 
     public init(data: Data?, response: URLResponse?, error: Error?) {
+        parse(data: data, response: response, error: error)
+    }
+
+    mutating func parse(data: Data?, response: URLResponse?, error: Error?) {
         self.response = response as? HTTPURLResponse
         if error != nil {
             self.error = error
@@ -26,7 +34,7 @@ public struct DecodableResponseHandler<T>:ResponseHandler where T: Decodable {
         var status = StatusCode(rawValue: self.response?.statusCode ?? 0)
         do {
             if let unwrappedData = data {
-                json = try JSONDecoder().decode(T.self, from: unwrappedData)
+                json = try decoder.decode(T.self, from: unwrappedData)
             }
             self.error = nil
         } catch let err {

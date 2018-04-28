@@ -30,7 +30,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
     public func create(data: T,
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.post(path: self.path)
-        request.httpBody = try? JSONEncoder().encode(data)
+        request.httpBody = try? encoder.encode(data)
         let task = taskFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
@@ -43,7 +43,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
     public func update(slug: String, data: T,
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.put(path: "\(self.path)/\(slug)")
-        request.httpBody = try? JSONEncoder().encode(data)
+        request.httpBody = try? encoder.encode(data)
         let task = taskFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
