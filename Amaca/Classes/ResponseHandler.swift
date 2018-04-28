@@ -8,7 +8,9 @@
 import Foundation
 
 public protocol ResponseHandler {
+    associatedtype DataType
     var status: StatusCode { get }
     var response: HTTPURLResponse? { get }
     var error: Error? { get }
+    var data: DataType? { get }
 }

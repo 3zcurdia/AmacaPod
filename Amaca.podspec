@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Amaca'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A restful network interface'
   s.description      = 'Multipropuse Network iterface for RESTful services with Codable objects'
 

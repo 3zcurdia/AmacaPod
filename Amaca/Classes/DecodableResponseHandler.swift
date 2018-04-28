@@ -8,10 +8,11 @@
 import Foundation
 
 public struct DecodableResponseHandler<T>:ResponseHandler where T: Decodable {
+    public typealias DataType = T
     public let status: StatusCode
     public let response: HTTPURLResponse?
     public let error: Error?
-    public let data: T?
+    public let data: DataType?
 
     public init(data: Data?, response: URLResponse?, error: Error?) {
         self.response = response as? HTTPURLResponse

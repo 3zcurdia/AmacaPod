@@ -8,10 +8,11 @@
 import Foundation
 
 public struct DataResponseHandler: ResponseHandler {
+    public typealias DataType = Data
     public let status: StatusCode
     public let response: HTTPURLResponse?
     public let error: Error?
-    public let data: Data?
+    public let data: DataType?
 
     public init(data: Data?, response: URLResponse?, error: Error?) {
         self.error = error

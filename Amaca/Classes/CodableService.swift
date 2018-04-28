@@ -10,7 +10,7 @@ import Foundation
 public class CodableService<T>: CodableClient<T> where T: Codable {
     public func index(_ completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) {
         let request = requestBuilder.get(path: self.path)
-        let task = listTaskFor(request: request, codableCompletionHandler: completionHandler)
+        let task = listTaskFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
 
@@ -23,7 +23,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
     public func show(slug: String,
                      completionHandler: @escaping CodableHandlerClojure) {
         let request = requestBuilder.get(path: "\(self.path)/\(slug)")
-        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        let task = taskFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
 
@@ -31,7 +31,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.post(path: self.path)
         request.httpBody = try? JSONEncoder().encode(data)
-        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        let task = taskFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
 
@@ -44,7 +44,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.put(path: "\(self.path)/\(slug)")
         request.httpBody = try? JSONEncoder().encode(data)
-        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        let task = taskFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
 
@@ -56,7 +56,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
     public func delete(slug: String,
                        completionHandler: @escaping CodableHandlerClojure) {
         let request = requestBuilder.delete(path: "\(self.path)/\(slug)")
-        let task = taskFor(request: request, codableCompletionHandler: completionHandler)
+        let task = taskFor(request: request, completionHandler: completionHandler)
         task.resume()
     }
 }
