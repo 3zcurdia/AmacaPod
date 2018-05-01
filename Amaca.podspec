@@ -11,12 +11,15 @@ Pod::Spec.new do |s|
 
   s.swift_version = '4.0'
   s.ios.deployment_target = '9.0'
+  s.osx.deployment_target  = '10.10'
 
   s.source_files = 'Amaca/Classes/**/*'
 
   # s.resource_bundles = {
   #   'Amaca' => ['Amaca/Assets/*.png']
   # }
+  s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/CCommonCrypto/' }
+  s.preserve_paths = 'CCommonCrypto/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
