@@ -8,22 +8,22 @@
 import Foundation
 
 public class CodableService<T>: CodableClient<T> where T: Codable {
-    public func index(_ completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) {
+    public func index(cache: Bool = false, completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) {
         let request = requestBuilder.get(path: self.path)
-        let task = listTaskFor(request: request, completionHandler: completionHandler)
+        let task = listTaskFor(request: request, cache: cache, completionHandler: completionHandler)
         task.resume()
     }
 
     public typealias CodableHandlerClojure = (DecodableResponseHandler<T>) -> Void
-    public func show(_ remoteId: Int,
+    public func show(_ remoteId: Int, cache: Bool = false,
                      completionHandler: @escaping CodableHandlerClojure) {
-        self.show(slug: String(describing: remoteId), completionHandler: completionHandler)
+        self.show(slug: String(describing: remoteId), cache: cache, completionHandler: completionHandler)
     }
 
-    public func show(slug: String,
+    public func show(slug: String, cache: Bool = false,
                      completionHandler: @escaping CodableHandlerClojure) {
         let request = requestBuilder.get(path: "\(self.path)/\(slug)")
-        let task = taskFor(request: request, completionHandler: completionHandler)
+        let task = taskFor(request: request, cache: cache, completionHandler: completionHandler)
         task.resume()
     }
 

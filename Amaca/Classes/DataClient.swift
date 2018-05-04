@@ -21,7 +21,8 @@ public class DataClient: Clientable {
                                              contentType: contentType)
     }
 
-    public func taskFor(request: URLRequest, completionHandler: @escaping (DataResponseHandler) -> Void) -> URLSessionDataTask {
+    public func taskFor(request: URLRequest,
+                        completionHandler: @escaping (DataResponseHandler) -> Void) -> URLSessionDataTask {
         return config.session.dataTask(with: request) { (data, response, error) in
             let response = DataResponseHandler(data: data, response: response, error: error)
             DispatchQueue.main.async { completionHandler(response) }

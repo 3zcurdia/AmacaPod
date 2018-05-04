@@ -51,8 +51,10 @@ class CodableServiceTests: XCTestCase {
             exp.fulfill()
             XCTAssertNil(response.error)
             XCTAssertNotNil(response.data)
-            XCTAssertEqual(response.data!.title, "sunt aut facere repellat provident occaecati excepturi optio reprehenderit")
-            XCTAssertEqual(response.data!.body, "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto")
+            XCTAssertEqual(response.data!.title,
+                           "sunt aut facere repellat provident occaecati excepturi optio reprehenderit")
+            XCTAssertEqual(response.data!.body,
+                           "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto")
             XCTAssertNotNil(response.response)
             XCTAssertEqual(response.status, StatusCode.success)
         }

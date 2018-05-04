@@ -24,18 +24,21 @@ public class CodableClient<T>: Clientable where T: Codable {
                                              contentType: contentType)
     }
 
-    public func listTaskFor(request: URLRequest,
+    public func listTaskFor(request: URLRequest, cache: Bool = false,
                      completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) -> URLSessionDataTask {
+        // if cached { fetch && return }
         return config.session.dataTask(with: request) { [weak self] (data, response, error) in
             guard let that = self else { return }
             var decodedResponse = DecodableResponseHandler<[T]>()
             decodedResponse.decoder = that.decoder
             decodedResponse.parse(data: data, response: response, error: error)
+            // delete cache if present
+            // save cache if enabled
             DispatchQueue.main.async { completionHandler(decodedResponse) }
         }
     }
 
-    public func taskFor(request: URLRequest,
+    public func taskFor(request: URLRequest, cache: Bool = false,
                      completionHandler: @escaping (DecodableResponseHandler<T>) -> Void) -> URLSessionDataTask {
         return config.session.dataTask(with: request) { [weak self] (data, response, error) in
             guard let that = self else { return }

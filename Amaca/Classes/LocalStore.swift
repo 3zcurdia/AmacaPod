@@ -23,8 +23,8 @@ public class LocalStore<T> where T: Codable {
         do {
             let data = try encoder.encode(object)
             try data.write(to: fileURL)
-        } catch let e {
-            print("ERROR: \(e)")
+        } catch let err {
+            print("ERROR: \(err)")
         }
     }
 
@@ -35,8 +35,8 @@ public class LocalStore<T> where T: Codable {
         do {
             let data = try Data(contentsOf: fileURL)
             return try decoder.decode(T.self, from: data)
-        } catch let e {
-            print("ERROR: \(e)")
+        } catch let err {
+            print("ERROR: \(err)")
             return nil
         }
     }
