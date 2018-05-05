@@ -26,7 +26,7 @@ public class CacheManager<T>: DirectoryManager where T: Codable {
         guard let data = rawData else { return nil }
         let filename = sha256(data: data)
         if filename != manifest[url.absoluteString] {
-            deleteFile(filename)
+            deleteFile(filename: filename)
             manifest[url.absoluteString] = filename
             saveManifest()
         }
@@ -45,7 +45,7 @@ public class CacheManager<T>: DirectoryManager where T: Codable {
     }
 
     public func purge() {
-        for (_, filename) in manifest { deleteFile(filename) }
+        for (_, filename) in manifest { deleteFile(filename: filename) }
         self.manifest = [String: String]()
         saveManifest()
     }
@@ -78,9 +78,14 @@ public class CacheManager<T>: DirectoryManager where T: Codable {
         }
     }
 
-    private func deleteFile(_ filename: String) {
-        let fileUrl = storageType.folder.appendingPathComponent(filename)
-        FileManager.default.fileExists(atPath: fileUrl.path)
+    public func deleteFileFrom(url: URL?) {
+        guard let url = url else { return }
+        guard let sha = manifest[url.absoluteString] else { return }
+        deleteFile(filename: sha)
+    }
+
+    private func deleteFile(filename: String) {
+        self.storeFor(filename: filename).delete()
     }
 
     private func sha256(data: Data) -> String {

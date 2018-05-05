@@ -28,6 +28,12 @@ public class LocalStore<T> where T: Codable {
         }
     }
 
+    public func delete() {
+        if FileManager.default.fileExists(atPath: fileURL.path) {
+            try? FileManager.default.removeItem(at: fileURL)
+        }
+    }
+
     public var storedValue: T? {
         guard FileManager.default.fileExists(atPath: fileURL.path) else {
             return nil

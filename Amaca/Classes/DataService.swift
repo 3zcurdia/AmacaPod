@@ -10,8 +10,7 @@ import Foundation
 public class DataService: DataClient {
     public func index(_ completionHandler: @escaping (DataResponseHandler) -> Void) {
         let request = requestBuilder.get(path: self.path)
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 
     public func show(_ remoteId: Int,
@@ -22,16 +21,14 @@ public class DataService: DataClient {
     public func show(slug: String,
                      completionHandler: @escaping (DataResponseHandler) -> Void) {
         let request = requestBuilder.get(path: "\(self.path)/\(slug)")
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 
     public func create(data: Data,
                        completionHandler: @escaping (DataResponseHandler) -> Void) {
         var request = requestBuilder.post(path: self.path)
         request.httpBody = data
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 
     public func update(_ remoteId: Int, data: Data,
@@ -43,8 +40,7 @@ public class DataService: DataClient {
                        completionHandler: @escaping (DataResponseHandler) -> Void) {
         var request = requestBuilder.put(path: "\(self.path)/\(slug)")
         request.httpBody = data
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 
     public func delete(_ remoteId: Int,
@@ -55,7 +51,6 @@ public class DataService: DataClient {
     public func delete(slug: String,
                        completionHandler: @escaping (DataResponseHandler) -> Void) {
         let request = requestBuilder.delete(path: "\(self.path)/\(slug)")
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 }

@@ -22,10 +22,11 @@ public class DataClient: Clientable {
     }
 
     public func taskFor(request: URLRequest,
-                        completionHandler: @escaping (DataResponseHandler) -> Void) -> URLSessionDataTask {
-        return config.session.dataTask(with: request) { (data, response, error) in
+                        completionHandler: @escaping (DataResponseHandler) -> Void) {
+        let task = config.session.dataTask(with: request) { (data, response, error) in
             let response = DataResponseHandler(data: data, response: response, error: error)
             DispatchQueue.main.async { completionHandler(response) }
         }
+        task.resume()
     }
 }

@@ -10,8 +10,7 @@ import Foundation
 public class CodableService<T>: CodableClient<T> where T: Codable {
     public func index(cache: Bool = false, completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) {
         let request = requestBuilder.get(path: self.path)
-        let task = listTaskFor(request: request, cache: cache, completionHandler: completionHandler)
-        task.resume()
+        listTaskFor(request: request, cache: cache, completionHandler: completionHandler)
     }
 
     public typealias CodableHandlerClojure = (DecodableResponseHandler<T>) -> Void
@@ -23,16 +22,14 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
     public func show(slug: String, cache: Bool = false,
                      completionHandler: @escaping CodableHandlerClojure) {
         let request = requestBuilder.get(path: "\(self.path)/\(slug)")
-        let task = taskFor(request: request, cache: cache, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, cache: cache, completionHandler: completionHandler)
     }
 
     public func create(data: T,
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.post(path: self.path)
         request.httpBody = try? encoder.encode(data)
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 
      public func update(_ remoteId: Int, data: T,
@@ -44,8 +41,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.put(path: "\(self.path)/\(slug)")
         request.httpBody = try? encoder.encode(data)
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 
     public func delete(_ remoteId: Int,
@@ -56,7 +52,6 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
     public func delete(slug: String,
                        completionHandler: @escaping CodableHandlerClojure) {
         let request = requestBuilder.delete(path: "\(self.path)/\(slug)")
-        let task = taskFor(request: request, completionHandler: completionHandler)
-        task.resume()
+        taskFor(request: request, completionHandler: completionHandler)
     }
 }

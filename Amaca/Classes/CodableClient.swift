@@ -11,6 +11,7 @@ public class CodableClient<T>: Clientable where T: Codable {
     let config: AmacaConfigurable
     let path: String
     let requestBuilder: RequestBuilder
+    let cacheManager = CacheManager<T>()
 
     public var encoder: JSONEncoder = JSONEncoder()
     public var decoder: JSONDecoder = JSONDecoder()
@@ -25,27 +26,42 @@ public class CodableClient<T>: Clientable where T: Codable {
     }
 
     public func listTaskFor(request: URLRequest, cache: Bool = false,
-                     completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) -> URLSessionDataTask {
-        // if cached { fetch && return }
-        return config.session.dataTask(with: request) { [weak self] (data, response, error) in
+                     completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) {
+        let manager = CacheManager<[T]>()
+        if cache, let url = request.url, let content = manager.find(url: url) {
+            var decodedResponse = DecodableResponseHandler<[T]>()
+            decodedResponse.data = content
+            decodedResponse.status = .success
+            completionHandler(decodedResponse)
+            return
+        } else if let url = request.url {
+            manager.deleteFileFrom(url: url)
+        }
+        let task = config.session.dataTask(with: request) { [weak self] (data, response, error) in
             guard let that = self else { return }
             var decodedResponse = DecodableResponseHandler<[T]>()
             decodedResponse.decoder = that.decoder
             decodedResponse.parse(data: data, response: response, error: error)
-            // delete cache if present
-            // save cache if enabled
             DispatchQueue.main.async { completionHandler(decodedResponse) }
+            if cache, let url = request.url, let decodedData = decodedResponse.data {
+                _ = manager.save(url: url, rawData: data, jsonData: decodedData)
+            }
         }
+        task.resume()
     }
 
     public func taskFor(request: URLRequest, cache: Bool = false,
-                     completionHandler: @escaping (DecodableResponseHandler<T>) -> Void) -> URLSessionDataTask {
-        return config.session.dataTask(with: request) { [weak self] (data, response, error) in
+                     completionHandler: @escaping (DecodableResponseHandler<T>) -> Void) {
+        let task = config.session.dataTask(with: request) { [weak self] (data, response, error) in
             guard let that = self else { return }
             var decodedResponse = DecodableResponseHandler<T>()
             decodedResponse.decoder = that.decoder
             decodedResponse.parse(data: data, response: response, error: error)
             DispatchQueue.main.async { completionHandler(decodedResponse) }
+            if cache, let url = request.url, let decodedData = decodedResponse.data {
+                _ = that.cacheManager.save(url: url, rawData: data, jsonData: decodedData)
+            }
         }
+        task.resume()
     }
 }
