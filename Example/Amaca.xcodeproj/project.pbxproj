@@ -20,7 +20,7 @@
 		30DFAAD6209049460093D73A /* RequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD5209049460093D73A /* RequestBuilderTests.swift */; };
 		30DFAADA20904EB40093D73A /* AmacaConfigurableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAD920904EB40093D73A /* AmacaConfigurableTests.swift */; };
 		30DFAADC209050F00093D73A /* DataResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAADB209050F00093D73A /* DataResponseHandlerTests.swift */; };
-		30DFAAE2209059810093D73A /* DecodableResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAE1209059810093D73A /* DecodableResponseHandlerTests.swift */; };
+		30DFAAE2209059810093D73A /* CodableResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAE1209059810093D73A /* CodableResponseHandlerTests.swift */; };
 		30DFAAE420905A5E0093D73A /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DFAAE320905A5E0093D73A /* Mocks.swift */; };
 		30F95E50209CF20F0088A728 /* StorageTypeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F95E4F209CF20F0088A728 /* StorageTypeTest.swift */; };
 		4287D46F2B90E0C582407D49 /* Pods_Amaca_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABDB00673D1A2526A1B4D3E /* Pods_Amaca_Tests.framework */; };
@@ -42,7 +42,7 @@
 		30DFAAD5209049460093D73A /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
 		30DFAAD920904EB40093D73A /* AmacaConfigurableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmacaConfigurableTests.swift; sourceTree = "<group>"; };
 		30DFAADB209050F00093D73A /* DataResponseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseHandlerTests.swift; sourceTree = "<group>"; };
-		30DFAAE1209059810093D73A /* DecodableResponseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableResponseHandlerTests.swift; sourceTree = "<group>"; };
+		30DFAAE1209059810093D73A /* CodableResponseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableResponseHandlerTests.swift; sourceTree = "<group>"; };
 		30DFAAE320905A5E0093D73A /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		30F95E4F209CF20F0088A728 /* StorageTypeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTypeTest.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Amaca_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Amaca_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +116,7 @@
 				30DFAAD5209049460093D73A /* RequestBuilderTests.swift */,
 				30DFAAD920904EB40093D73A /* AmacaConfigurableTests.swift */,
 				30DFAADB209050F00093D73A /* DataResponseHandlerTests.swift */,
-				30DFAAE1209059810093D73A /* DecodableResponseHandlerTests.swift */,
+				30DFAAE1209059810093D73A /* CodableResponseHandlerTests.swift */,
 				306AE91A2090BCA600EE9BBA /* DataServiceTests.swift */,
 				306AE91C2090C40800EE9BBA /* CodableServiceTests.swift */,
 				30F95E4F209CF20F0088A728 /* StorageTypeTest.swift */,
@@ -273,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30DFAACE20903F1E0093D73A /* HeaderAuthenticationTests.swift in Sources */,
-				30DFAAE2209059810093D73A /* DecodableResponseHandlerTests.swift in Sources */,
+				30DFAAE2209059810093D73A /* CodableResponseHandlerTests.swift in Sources */,
 				30DFAADA20904EB40093D73A /* AmacaConfigurableTests.swift in Sources */,
 				30DFAAE420905A5E0093D73A /* Mocks.swift in Sources */,
 				306AE91B2090BCA600EE9BBA /* DataServiceTests.swift in Sources */,

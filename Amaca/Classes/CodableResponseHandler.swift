@@ -1,5 +1,5 @@
 //
-//  DecodableResponseHandler.swift
+//  CodableResponseHandler.swift
 //  Amaca
 //
 //  Created by Luis Ezcurdia on 4/25/18.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct DecodableResponseHandler<T>:ResponseHandler where T: Codable {
+public struct CodableResponseHandler<T>:ResponseHandler where T: Codable {
     public typealias DataType = T
     public var status: StatusCode = .unkown
     public var response: HTTPURLResponse?

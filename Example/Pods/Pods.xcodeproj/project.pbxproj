@@ -35,7 +35,7 @@
 		AD56CC38843B735611412FEA22CFE230 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421CA765CDF2B09ED7B3B8DF1555C5BB /* ResponseHandler.swift */; };
 		AE6E14EDB640A935623B425D31FEAD0E /* SessionDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810C41A4C460D9FA97A51C9F0796EC4 /* SessionDownloadTask.swift */; };
 		BCC8E3312FCE186B2CF4C26DF2EE5F3F /* Pods-Amaca_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */; };
-		BD76A531F04F1E736D1B2023557712F4 /* DecodableResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CAC02F90A8310F2769E1DB4396281 /* DecodableResponseHandler.swift */; };
+		BD76A531F04F1E736D1B2023557712F4 /* CodableResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CAC02F90A8310F2769E1DB4396281 /* CodableResponseHandler.swift */; };
 		C8CB7DC071BC0856A9140FF5746FE986 /* DVR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5340D7E4513515F549FBC395AF5D56F8 /* DVR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59B8CA81FF64C72D1B81B32282EBA91 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF11FED25D116CC96A3080206030753 /* CacheManager.swift */; };
 		E273A4BD360EA73BAAA0E6D46FC997E3 /* AmacaConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA01D29642277D2CAC618051A57DB3 /* AmacaConfigurable.swift */; };
@@ -63,16 +63,16 @@
 		0359149FFF796BAE0C77653D0A88F1A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04313850B4D090C30035526686413944 /* Amaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amaca-dummy.m"; sourceTree = "<group>"; };
 		10E06D411BCCA3CA88041438E1D52213 /* Amaca-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amaca-umbrella.h"; sourceTree = "<group>"; };
-		1D5CAC02F90A8310F2769E1DB4396281 /* DecodableResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodableResponseHandler.swift; path = Amaca/Classes/DecodableResponseHandler.swift; sourceTree = "<group>"; };
+		1D5CAC02F90A8310F2769E1DB4396281 /* CodableResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableResponseHandler.swift; path = Amaca/Classes/CodableResponseHandler.swift; sourceTree = "<group>"; };
 		1DC01A2BD32AC54414481ACE109BC0B8 /* CodableService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableService.swift; path = Amaca/Classes/CodableService.swift; sourceTree = "<group>"; };
 		20D52DC161BE37ED162EB3A14F12009F /* SessionUploadTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionUploadTask.swift; path = DVR/SessionUploadTask.swift; sourceTree = "<group>"; };
-		286490E6ACEEF0E1C47E730F61A567C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		286490E6ACEEF0E1C47E730F61A567C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		354BC4A61103F6A5DF96D1D38A4DC006 /* Pods-Amaca_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Amaca_Tests-dummy.m"; sourceTree = "<group>"; };
 		38A7948FECBB99979E96A90B0B709987 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ABA01D29642277D2CAC618051A57DB3 /* AmacaConfigurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmacaConfigurable.swift; path = Amaca/Classes/AmacaConfigurable.swift; sourceTree = "<group>"; };
 		3BD559B32EFE97B102BB4CE4604DFD8B /* StorageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageType.swift; path = Amaca/Classes/StorageType.swift; sourceTree = "<group>"; };
 		412CBE190EAEF0B5D161677AE61912C2 /* DVR-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DVR-prefix.pch"; sourceTree = "<group>"; };
-		41D48343CF74856E87EA0024F1926246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		41D48343CF74856E87EA0024F1926246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		421CA765CDF2B09ED7B3B8DF1555C5BB /* ResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseHandler.swift; path = Amaca/Classes/ResponseHandler.swift; sourceTree = "<group>"; };
 		432D1886ED801B9CBB6BD9D9A3AD5234 /* StatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = Amaca/Classes/StatusCode.swift; sourceTree = "<group>"; };
 		49F244A52B7ADF84AEB43A53A6C5EED5 /* LocalStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalStore.swift; path = Amaca/Classes/LocalStore.swift; sourceTree = "<group>"; };
@@ -84,20 +84,20 @@
 		6E20BFB621AF4C89B60C0115349613DC /* RequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestBuilder.swift; path = Amaca/Classes/RequestBuilder.swift; sourceTree = "<group>"; };
 		7129CB068BF641599AB58D4A478E5DB1 /* Pods-Amaca_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Amaca_Tests-resources.sh"; sourceTree = "<group>"; };
 		761AFA7EC6CF3369B5EB926918E5D8C7 /* Pods-Amaca_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Amaca_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		78BF1F39C258EF8100017F7B95912EE8 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Amaca.framework; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78BF1F39C258EF8100017F7B95912EE8 /* Amaca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF11FED25D116CC96A3080206030753 /* CacheManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheManager.swift; path = Amaca/Classes/CacheManager.swift; sourceTree = "<group>"; };
 		7F739CB283DEDCD5BED797531E6F536D /* Clientable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clientable.swift; path = Amaca/Classes/Clientable.swift; sourceTree = "<group>"; };
 		8AF9E92E7A696261B1777AC737873EE0 /* Authenticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticable.swift; path = Amaca/Classes/Authenticable.swift; sourceTree = "<group>"; };
 		91D2D7B00A0D82054AF26EDCE75BE813 /* DataResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResponseHandler.swift; path = Amaca/Classes/DataResponseHandler.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96AC1B9EB0CD679C9048C6378DA01BBE /* DataService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Amaca/Classes/DataService.swift; sourceTree = "<group>"; };
 		9EC0C49740D2396D71D8CB83723F3174 /* URLResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLResponse.swift; path = DVR/URLResponse.swift; sourceTree = "<group>"; };
 		9FE29630AA5187CA358D6FA20794698E /* Amaca.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amaca.xcconfig; sourceTree = "<group>"; };
 		A4470E430D138C70DCE5F45101BEF81A /* DVR.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DVR.xcconfig; sourceTree = "<group>"; };
-		A9DDD86D61578FF978623D206B660E09 /* Amaca.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Amaca.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B204FF78025C20164B603346B6A60DDE /* DVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DVR.framework; path = DVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DDD86D61578FF978623D206B660E09 /* Amaca.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Amaca.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B204FF78025C20164B603346B6A60DDE /* DVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DDDF25F17797DE5B213F3D37E60F6F /* DVR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DVR-dummy.m"; sourceTree = "<group>"; };
-		B7529FDA4F09CECAD72F376088FAF66C /* Pods_Amaca_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Amaca_Tests.framework; path = "Pods-Amaca_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7529FDA4F09CECAD72F376088FAF66C /* Pods_Amaca_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaca_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D331B10FE6658821A12E7C83CD567E /* Pods-Amaca_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Amaca_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC997D73F7C41313D3F2E28988E369D1 /* Pods-Amaca_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Amaca_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		C0DB9FB8CA854C7B00D1F4CE3B1C06C6 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = DVR/Session.swift; sourceTree = "<group>"; };
@@ -168,7 +168,6 @@
 				9EC0C49740D2396D71D8CB83723F3174 /* URLResponse.swift */,
 				97008479145AEF949B0AA75C0EB75608 /* Support Files */,
 			);
-			name = DVR;
 			path = DVR;
 			sourceTree = "<group>";
 		};
@@ -228,7 +227,7 @@
 				ED4431DE2A1E3969E4B51D8D8BD4504D /* DataClient.swift */,
 				91D2D7B00A0D82054AF26EDCE75BE813 /* DataResponseHandler.swift */,
 				96AC1B9EB0CD679C9048C6378DA01BBE /* DataService.swift */,
-				1D5CAC02F90A8310F2769E1DB4396281 /* DecodableResponseHandler.swift */,
+				1D5CAC02F90A8310F2769E1DB4396281 /* CodableResponseHandler.swift */,
 				49F244A52B7ADF84AEB43A53A6C5EED5 /* LocalStore.swift */,
 				6E20BFB621AF4C89B60C0115349613DC /* RequestBuilder.swift */,
 				421CA765CDF2B09ED7B3B8DF1555C5BB /* ResponseHandler.swift */,
@@ -431,7 +430,7 @@
 				09AD7FA6824AC54562D25429B2375451 /* DataClient.swift in Sources */,
 				3C649C5CA2210DC9556EB690D7B6AFF9 /* DataResponseHandler.swift in Sources */,
 				0B42CE071D0D486994149795EF2E41BB /* DataService.swift in Sources */,
-				BD76A531F04F1E736D1B2023557712F4 /* DecodableResponseHandler.swift in Sources */,
+				BD76A531F04F1E736D1B2023557712F4 /* CodableResponseHandler.swift in Sources */,
 				8E95F5DFB451908496B6B0CAC09C23C9 /* LocalStore.swift in Sources */,
 				190F63FF1CEA283431C5036257878570 /* RequestBuilder.swift in Sources */,
 				AD56CC38843B735611412FEA22CFE230 /* ResponseHandler.swift in Sources */,

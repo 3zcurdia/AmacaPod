@@ -9,7 +9,7 @@
 import XCTest
 import Amaca
 
-class DecodableResponseHandlerTests: XCTestCase {
+class CodableResponseHandlerTests: XCTestCase {
     let url = URL(string: "https://example.com/api")!
     let post = MockCodablePost(title: "foo", body: "bar baz")
     lazy var encodedData: Data = {
@@ -25,7 +25,7 @@ class DecodableResponseHandlerTests: XCTestCase {
     }
 
     func testNilValuesResponseHandler() {
-        let handler = DecodableResponseHandler<MockCodablePost>(data: nil,
+        let handler = CodableResponseHandler<MockCodablePost>(data: nil,
                                                                   response: nil,
                                                                   error: nil)
         XCTAssertNil(handler.error)
@@ -35,7 +35,7 @@ class DecodableResponseHandlerTests: XCTestCase {
     }
 
     func testNilResponseHandler() {
-        let handler = DecodableResponseHandler<MockCodablePost>(data: encodedData,
+        let handler = CodableResponseHandler<MockCodablePost>(data: encodedData,
                                                                   response: nil,
                                                                   error: nil)
         XCTAssertNil(handler.error)
@@ -47,7 +47,7 @@ class DecodableResponseHandlerTests: XCTestCase {
     func testUknownResponseHandler() {
         let response = HTTPURLResponse(url: url, statusCode: 0,
                                        httpVersion: nil, headerFields: nil)
-        let handler = DecodableResponseHandler<MockCodablePost>(data: encodedData,
+        let handler = CodableResponseHandler<MockCodablePost>(data: encodedData,
                                                                   response: response,
                                                                   error: nil)
         XCTAssertNil(handler.error)
@@ -60,7 +60,7 @@ class DecodableResponseHandlerTests: XCTestCase {
         let response = HTTPURLResponse(url: url, statusCode: 200,
                                        httpVersion: nil, headerFields: nil)
         let data = "".data(using: .utf8)
-        let handler = DecodableResponseHandler<MockCodablePost>(data: data,
+        let handler = CodableResponseHandler<MockCodablePost>(data: data,
                                                                   response: response,
                                                                   error: nil)
         XCTAssertNotNil(handler.error)
@@ -73,7 +73,7 @@ class DecodableResponseHandlerTests: XCTestCase {
         let response = HTTPURLResponse(url: url, statusCode: 900,
                                        httpVersion: nil, headerFields: nil)
         let error = MockError()
-        let handler = DecodableResponseHandler<MockCodablePost>(data: encodedData,
+        let handler = CodableResponseHandler<MockCodablePost>(data: encodedData,
                                                                   response: response,
                                                                   error: error)
         XCTAssertNotNil(handler.error)
@@ -85,7 +85,7 @@ class DecodableResponseHandlerTests: XCTestCase {
     func testSuccessHandler() {
         let response = HTTPURLResponse(url: url, statusCode: 200,
                                        httpVersion: nil, headerFields: nil)
-        let handler = DecodableResponseHandler<MockCodablePost>(data: encodedData,
+        let handler = CodableResponseHandler<MockCodablePost>(data: encodedData,
                                                                   response: response,
                                                                   error: nil)
         XCTAssertNil(handler.error)
