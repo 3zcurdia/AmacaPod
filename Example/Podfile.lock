@@ -1,5 +1,5 @@
 PODS:
-  - Amaca (0.1.1)
+  - Amaca (0.1.2)
   - DVR (1.1.0)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Amaca: dee6bfd219d723d1a1dbeae75aaaab2ba45604a6
+  Amaca: 7ce87fcc7627b4c8bd7c025447f78b284ccaf07d
   DVR: f785f86273f7a3a94335acf44611ac2cbf5920f9
 
 PODFILE CHECKSUM: ad254ad0ece014aff0e91a2c09c26d2a4811b6a0

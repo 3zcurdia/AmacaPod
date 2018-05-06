@@ -1,6 +1,6 @@
 {
   "name": "Amaca",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "A restful network interface",
   "description": "Multipropuse Network iterface for RESTful services with Codable objects",
   "homepage": "https://github.com/3zcurdia/amaca",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/3zcurdia/Amaca.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "swift_version": "4.0",
   "platforms": {
