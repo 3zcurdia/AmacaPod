@@ -29,7 +29,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.post(path: self.path)
         request.httpBody = try? encoder.encode(data)
-        taskFor(request: request, completionHandler: completionHandler)
+        taskFor(request: request, cache: false, completionHandler: completionHandler)
     }
 
      public func update(_ remoteId: Int, data: T,
@@ -41,7 +41,7 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
                        completionHandler: @escaping CodableHandlerClojure) {
         var request = requestBuilder.put(path: "\(self.path)/\(slug)")
         request.httpBody = try? encoder.encode(data)
-        taskFor(request: request, completionHandler: completionHandler)
+        taskFor(request: request, cache: false, completionHandler: completionHandler)
     }
 
     public func delete(_ remoteId: Int,
@@ -52,6 +52,6 @@ public class CodableService<T>: CodableClient<T> where T: Codable {
     public func delete(slug: String,
                        completionHandler: @escaping CodableHandlerClojure) {
         let request = requestBuilder.delete(path: "\(self.path)/\(slug)")
-        taskFor(request: request, completionHandler: completionHandler)
+        taskFor(request: request, cache: false, completionHandler: completionHandler)
     }
 }

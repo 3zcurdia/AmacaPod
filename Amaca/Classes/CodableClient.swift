@@ -11,7 +11,6 @@ public class CodableClient<T>: Clientable where T: Codable {
     let config: AmacaConfigurable
     let path: String
     let requestBuilder: RequestBuilder
-    let cacheManager = CacheManager<T>()
 
     public var encoder: JSONEncoder = JSONEncoder()
     public var decoder: JSONDecoder = JSONDecoder()
@@ -28,19 +27,19 @@ public class CodableClient<T>: Clientable where T: Codable {
     public func listTaskFor(request: URLRequest, cache: Bool = false,
                      completionHandler: @escaping (DecodableResponseHandler<[T]>) -> Void) {
         let manager = CacheManager<[T]>()
-        if cache, let url = request.url, let content = manager.find(url: url) {
-            var decodedResponse = DecodableResponseHandler<[T]>()
-            decodedResponse.data = content
-            decodedResponse.status = .success
-            completionHandler(decodedResponse)
-            return
-        } else if let url = request.url {
-            manager.deleteFileFrom(url: url)
+        var decodedResponse = DecodableResponseHandler<[T]>()
+        decodedResponse.decoder = self.decoder
+        if let url = request.url {
+            if cache, let content = manager.find(url: url) {
+                decodedResponse.data = content
+                decodedResponse.status = .success
+                completionHandler(decodedResponse)
+                return
+            } else {
+                manager.deleteFileFrom(url: url)
+            }
         }
-        let task = config.session.dataTask(with: request) { [weak self] (data, response, error) in
-            guard let that = self else { return }
-            var decodedResponse = DecodableResponseHandler<[T]>()
-            decodedResponse.decoder = that.decoder
+        let task = config.session.dataTask(with: request) { (data, response, error) in
             decodedResponse.parse(data: data, response: response, error: error)
             DispatchQueue.main.async { completionHandler(decodedResponse) }
             if cache, let url = request.url, let decodedData = decodedResponse.data {
@@ -52,14 +51,24 @@ public class CodableClient<T>: Clientable where T: Codable {
 
     public func taskFor(request: URLRequest, cache: Bool = false,
                      completionHandler: @escaping (DecodableResponseHandler<T>) -> Void) {
-        let task = config.session.dataTask(with: request) { [weak self] (data, response, error) in
-            guard let that = self else { return }
-            var decodedResponse = DecodableResponseHandler<T>()
-            decodedResponse.decoder = that.decoder
+        let manager = CacheManager<T>()
+        var decodedResponse = DecodableResponseHandler<T>()
+        decodedResponse.decoder = self.decoder
+        if let url = request.url {
+            if cache, let content = manager.find(url: url) {
+                decodedResponse.data = content
+                decodedResponse.status = .success
+                completionHandler(decodedResponse)
+                return
+            } else {
+                manager.deleteFileFrom(url: url)
+            }
+        }
+        let task = config.session.dataTask(with: request) { (data, response, error) in
             decodedResponse.parse(data: data, response: response, error: error)
             DispatchQueue.main.async { completionHandler(decodedResponse) }
             if cache, let url = request.url, let decodedData = decodedResponse.data {
-                _ = that.cacheManager.save(url: url, rawData: data, jsonData: decodedData)
+                _ = manager.save(url: url, rawData: data, jsonData: decodedData)
             }
         }
         task.resume()

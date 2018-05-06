@@ -31,7 +31,8 @@ class StorageTypeTest: XCTestCase {
     }
 
     func testFolder() {
-        XCTAssertEqual("org.ezcurdia.Amaca.storage", StorageType.cache.folder.lastPathComponent)
+        XCTAssertEqual("org.ezcurdia.Amaca.storage",
+            StorageType.cache.folder.lastPathComponent)
         XCTAssertEqual("org.ezcurdia.Amaca.storage", StorageType.permanent.folder.lastPathComponent)
     }
 
