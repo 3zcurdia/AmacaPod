@@ -9,7 +9,7 @@ import Foundation
 
 public struct CodableResponseHandler<T>:ResponseHandler where T: Codable {
     public typealias DataType = T
-    public var status: StatusCode = .undefined
+    public var status: StatusCode = .unkown
     public var response: HTTPURLResponse?
     public var error: Error?
     public var data: DataType?

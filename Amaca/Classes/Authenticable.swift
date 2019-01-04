@@ -14,10 +14,11 @@ public protocol Authenticable {
 
 public struct QueryAuthentication: Authenticable {
     public let token: String
-    public var tokenKey: String = "token"
+    public var tokenKey: String
 
-    public init(token: String) {
+    public init(token: String, key: String = "token") {
         self.token = token
+        self.tokenKey = key
     }
 
     public func applyTo(request: URLRequest) -> URLRequest {
@@ -37,10 +38,11 @@ public struct QueryAuthentication: Authenticable {
 
 public struct HeaderAuthentication: Authenticable {
     public let token: String
-    public var headerKey = "Bearer"
+    public var headerKey: String
 
-    public init(token: String) {
+    public init(token: String, key: String = "Bearer") {
         self.token = token
+        self.headerKey = key
     }
 
     public func applyTo(request: URLRequest) -> URLRequest {
