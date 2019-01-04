@@ -24,9 +24,9 @@ public class CodableClient<T>: Clientable where T: Codable {
                                              contentType: contentType)
     }
 
-    public func listTaskFor(request: URLRequest, cache: Bool = false,
-                     completionHandler: @escaping (CodableResponseHandler<[T]>) -> Void) {
-        var decodedResponse = CodableResponseHandler<[T]>(decoder: decoder, request: request, cache: cache)
+    public func listTaskFor(request: URLRequest,
+                            completionHandler: @escaping (CodableResponseHandler<[T]>) -> Void) {
+        var decodedResponse = CodableResponseHandler<[T]>(decoder: decoder)
         if decodedResponse.status == .success {
             completionHandler(decodedResponse)
             return
@@ -38,9 +38,9 @@ public class CodableClient<T>: Clientable where T: Codable {
         task.resume()
     }
 
-    public func taskFor(request: URLRequest, cache: Bool = false,
-                     completionHandler: @escaping (CodableResponseHandler<T>) -> Void) {
-        var decodedResponse = CodableResponseHandler<T>(decoder: decoder, request: request, cache: cache)
+    public func taskFor(request: URLRequest,
+                        completionHandler: @escaping (CodableResponseHandler<T>) -> Void) {
+        var decodedResponse = CodableResponseHandler<T>(decoder: decoder)
         if decodedResponse.status == .success {
             completionHandler(decodedResponse)
             return

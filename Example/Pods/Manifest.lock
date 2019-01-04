@@ -1,13 +1,13 @@
 PODS:
-  - Amaca (0.1.2)
-  - DVR (1.1.0)
+  - Amaca (0.1.3)
+  - DVR (1.3.2)
 
 DEPENDENCIES:
   - Amaca (from `../`)
-  - DVR
+  - DVR (~> 1.3.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - DVR
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Amaca: 7ce87fcc7627b4c8bd7c025447f78b284ccaf07d
-  DVR: f785f86273f7a3a94335acf44611ac2cbf5920f9
+  Amaca: eb67006af1aa4d8c67e411e787d5bf299a3e0e4c
+  DVR: 32654d5cab900135a0219f0a9548ab61e8644960
 
-PODFILE CHECKSUM: ad254ad0ece014aff0e91a2c09c26d2a4811b6a0
+PODFILE CHECKSUM: 9d155043a7925a77b31a4c5823674a8534a762e3
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

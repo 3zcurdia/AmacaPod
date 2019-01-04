@@ -8,6 +8,7 @@
 import Foundation
 
 public enum StatusCode: Int {
+    case undefined = -1
     case unkown = 0
     case info        // 1xx
     case success     // 2xx
