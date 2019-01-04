@@ -40,7 +40,7 @@ class CodableResponseHandlerTests: XCTestCase {
                                                                   error: nil)
         XCTAssertNil(handler.error)
         XCTAssertNil(handler.response)
-        XCTAssertNotNil(handler.data)
+        XCTAssertNil(handler.data)
         XCTAssertEqual(handler.status, StatusCode.unkown)
     }
 
@@ -80,6 +80,18 @@ class CodableResponseHandlerTests: XCTestCase {
         XCTAssertEqual(handler.response, response)
         XCTAssertNil(handler.data)
         XCTAssertEqual(handler.status, StatusCode.error)
+    }
+
+    func testNoContentHandler() {
+        let response = HTTPURLResponse(url: url, statusCode: 204,
+                                       httpVersion: nil, headerFields: nil)
+        let handler = CodableResponseHandler<MockCodablePost>(data: encodedData,
+                                                              response: response,
+                                                              error: nil)
+        XCTAssertNil(handler.error)
+        XCTAssertEqual(handler.response, response)
+        XCTAssertEqual(handler.status, StatusCode.success)
+        XCTAssertNil(handler.data)
     }
 
     func testSuccessHandler() {
