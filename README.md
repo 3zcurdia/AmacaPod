@@ -1,5 +1,6 @@
 # Amaca
 
+[![Build Status](https://app.bitrise.io/app/27ae7280b484ae3b/status.svg?token=8jyqE7dtyTgWhj0KGC2hEg&branch=master)](https://app.bitrise.io/app/27ae7280b484ae3b)
 [![CI Status](http://img.shields.io/travis/3zcurdia/Amaca.svg?style=flat)](https://travis-ci.org/3zcurdia/Amaca)
 [![Version](https://img.shields.io/cocoapods/v/Amaca.svg?style=flat)](http://cocoapods.org/pods/Amaca)
 [![License](https://img.shields.io/cocoapods/l/Amaca.svg?style=flat)](http://cocoapods.org/pods/Amaca)
