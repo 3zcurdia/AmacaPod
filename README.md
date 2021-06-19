@@ -1,3 +1,3 @@
 # Amaca
 
-A description of this package.
+A resful client
